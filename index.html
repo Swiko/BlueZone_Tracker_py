@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Карта озер ЛО</title>
+    <!-- Подключаем скрипт Telegram Mini App -->
+    <script src="telegram.org"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="unpkg.com" />
+    <style>
+        body { margin: 0; padding: 0; background-color: var(--tg-theme-bg-color); color: var(--tg-theme-text-color); }
+        #map { height: 100vh; width: 100vw; }
+        .leaflet-popup-content { font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="unpkg.com"></script>
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.ready();
+        tg.expand();
+
+        // Инициализация карты (Центр Ленобласти)
+        const map = L.map('map').setView([60.0, 30.8], 8);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Список озер (можно расширять)
+        const lakes = [
+            { name: "Ладожское озеро", coords: [60.8, 31.5], info: "Самое большое озеро Европы." },
+            { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Живописная система озер и проток." },
+            { name: "Медное озеро", coords: [60.2, 30.1], info: "Популярное место отдыха в Юкках." },
+            { name: "Лемболовское озеро", coords: [60.3, 30.3], info: "Рыбалка и отдых, ст. Васкелово." }
+        ];
+
+        // Добавляем маркеры на карту
+        lakes.forEach(lake => {
+            const marker = L.marker(lake.coords).addTo(map);
+            marker.bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
+        });
+    </script>
+</body>
+</html>
