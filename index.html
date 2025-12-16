@@ -1,79 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Lakes Map</title>
-
-    <!-- 1. Telegram Web App Script -->
+    <title>Карта озер Ленобласти</title>
     <script src="telegram.org"></script>
-
-    <!-- 2. Leaflet CSS (ОБЯЗАТЕЛЬНО ПЕРЕД JS) -->
     <link rel="stylesheet" href="unpkg.com" />
-
     <style>
-        /* Обязательно задаем высоту всем родителям */
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background: #f0f0f0;
-        }
-        #map {
-            height: 100vh;
-            width: 100vw;
-            display: block;
-        }
-        #error-log {
-            position: fixed;
-            top: 0; left: 0;
-            background: rgba(255,0,0,0.8);
-            color: white;
-            z-index: 9999;
-            font-size: 10px;
-            pointer-events: none;
-        }
+        html, body { height: 100%; margin: 0; padding: 0; background: var(--tg-theme-bg-color, white); }
+        #map { height: 100vh; width: 100vw; }
     </style>
 </head>
 <body>
-    <div id="error-log"></div>
     <div id="map"></div>
-
-    <!-- 3. Leaflet JS -->
     <script src="unpkg.com"></script>
-
     <script>
-        // Функция для вывода ошибок на экран телефона
-        window.onerror = function(msg, url, line) {
-            document.getElementById('error-log').innerHTML += msg + ' (line ' + line + ')<br>';
-        };
-
-        try {
+        window.onload = function() {
             const tg = window.Telegram.WebApp;
             tg.ready();
             tg.expand();
 
-            // Инициализация карты
-            // Координаты центра: Ладожское озеро
-            const map = L.map('map', {
-                center: [60.5, 31.0],
-                zoom: 8
-            });
-
-            // Используем надежный источник тайлов
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OSM'
+            const map = L.map('map').setView([60.0, 30.3], 8);
+            L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap'
             }).addTo(map);
 
-            // Тестовый маркер
-            L.marker([60.0, 30.3]).addTo(map)
-                .bindPopup('Санкт-Петербург')
-                .openPopup();
+            const lakes = [
+                { name: "Ладожское озеро", coords: [61.0, 31.5], info: "Крупнейшее озеро Европы." },
+                { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Отличное место для лодочных походов." },
+                { name: "Медное озеро", coords: [60.21, 30.14], info: "Чистая вода, темный песок." }
+            ];
 
-            console.log("Карта инициализирована");
-        } catch (e) {
-            document.getElementById('error-log').innerHTML += 'Ошибка JS: ' + e.message;
-        }
+            lakes.forEach(lake => {
+                L.marker(lake.coords).addTo(map).bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
+            });
+        };
     </script>
 </body>
 </html>
