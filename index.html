@@ -5,82 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Карта озер Ленобласти</title>
 
-    <!-- Telegram WebApp SDK -->
+    <!-- 1. Скрипт Telegram ВСЕГДА первым -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-    <!-- Leaflet CSS (ИСПРАВЛЕНО: добавлена полная ссылка) -->
-    <link rel="stylesheet" href="unpkg.com" />
+    <!-- 2. Leaflet CSS с альтернативного CDN (cdnjs обычно стабильнее) -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com" />
 
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background: var(--tg-theme-bg-color, #ffffff);
-            overflow: hidden; /* Чтобы не было лишних скроллов в Telegram */
-        }
-        #map {
-            height: 100vh;
-            width: 100vw;
-            touch-action: none; /* Улучшает управление картой на сенсорных экранах */
-        }
+        html, body { height: 100%; margin: 0; padding: 0; background: var(--tg-theme-bg-color, #fff); overflow: hidden; }
+        #map { height: 100vh; width: 100vw; touch-action: none; }
+        .error-msg { padding: 20px; text-align: center; font-family: sans-serif; }
     </style>
 </head>
 <body>
     <div id="map"></div>
 
-    <!-- Leaflet JS (ИСПРАВЛЕНО: добавлена полная ссылка) -->
-    <script src="unpkg.com"></script>
+    <!-- 3. Leaflet JS -->
+    <script src="cdnjs.cloudflare.com"></script>
 
     <script>
-    window.onload = function() {
+    function initApp() {
+        const tg = window.Telegram.WebApp;
+        tg.ready();
+        tg.expand();
+
+        // Проверяем наличие объекта L (Leaflet)
+        if (typeof L === 'undefined') {
+            document.getElementById('map').innerHTML =
+                `<div class="error-msg">
+                    <h3>Ошибка загрузки библиотек</h3>
+                    <p>Не удалось подключиться к серверу карт. Проверьте интернет или VPN.</p>
+                    <button onclick="location.reload()">Обновить</button>
+                </div>`;
+            return;
+        }
+
         try {
-            // Инициализация Telegram WebApp
-            const tg = window.Telegram.WebApp;
-            if (tg) {
-                tg.ready();
-                tg.expand(); // Разворачиваем на весь экран
-            }
+            const map = L.map('map', { zoomControl: false }).setView([60.5, 30.5], 8);
 
-            // Проверка загрузки Leaflet
-            if (typeof L === 'undefined') {
-                document.body.innerHTML = "<h3 style='padding:20px;'>Ошибка: Leaflet не загружен. Проверьте интернет-соединение.</h3>";
-                return;
-            }
-
-            // Инициализация карты
-            // Координаты центра Ленобласти (примерно)
-            const map = L.map('map', {
-                zoomControl: false // Скрываем стандартные кнопки, чтобы не мешали в Mini App
-            }).setView([60.5, 30.5], 7);
-
-            // Добавляем слой карты
-            L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap'
+            // Используем стандартный слой OpenStreetMap (более надежный адрес)
+            L.tileLayer('tile.openstreetmap.org{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap'
             }).addTo(map);
 
-            // Добавляем кнопки зума в удобное место (снизу справа)
             L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-            // Данные об озерах
             const lakes = [
                 { name: "Ладожское озеро", coords: [61.0, 31.5], info: "Крупнейшее озеро Европы." },
-                { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Отличное место для лодочных походов." },
-                { name: "Медное озеро", coords: [60.21, 30.14], info: "Чистая вода, темный песок." }
+                { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Популярно для походов." },
+                { name: "Медное озеро", coords: [60.21, 30.14], info: "Чистая вода." }
             ];
 
-            // Добавление маркеров
             lakes.forEach(lake => {
-                L.marker(lake.coords)
-                    .addTo(map)
-                    .bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
+                L.marker(lake.coords).addTo(map).bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
             });
-
-        } catch (error) {
-            console.error("Критическая ошибка:", error);
-            document.body.innerHTML = `<div style='padding:20px;'><h3>Ошибка</h3><p>${error.message}</p></div>`;
+        } catch (e) {
+            console.error(e);
         }
-    };
+    }
+
+    // Запуск после полной загрузки страницы
+    window.addEventListener('load', initApp);
     </script>
 </body>
 </html>

@@ -23,7 +23,7 @@ dp = Dispatcher()
 @dp.message(CommandStart())
 async def cmd_start(message: types.Message):
     # Добавляем ?v=1 для форсированного обновления кэша Telegram
-    web_app_link = f"{URL_MAP}?v=1.7"
+    web_app_link = f"{URL_MAP}?v=1.10"
 
     markup = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📍 Открыть карту озёр", web_app=WebAppInfo(url=web_app_link))]

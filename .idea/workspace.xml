@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="test_003">
+    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="test_010">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -23,6 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -119,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765926209106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test_010">
+      <option name="closed" value="true" />
+      <created>1765928343857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765928343857</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +148,7 @@
     <MESSAGE value="test_001" />
     <MESSAGE value="test_002" />
     <MESSAGE value="test_003" />
-    <option name="LAST_COMMIT_MESSAGE" value="test_003" />
+    <MESSAGE value="test_010" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_010" />
   </component>
 </project>
