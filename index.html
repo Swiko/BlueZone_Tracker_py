@@ -26,8 +26,8 @@
         // Инициализация карты (Центр Ленобласти)
         const map = L.map('map').setView([60.0, 30.8], 8);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap'
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
         }).addTo(map);
 
         // Список озер (можно расширять)
