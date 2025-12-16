@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="Initializing the zero loop">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="Add Privacy">
+      <change afterPath="$PROJECT_DIR$/token.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765923105278</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Privacy">
+      <option name="closed" value="true" />
+      <created>1765924128402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765924128402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initializing the zero loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initializing the zero loop" />
+    <MESSAGE value="Add Privacy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Privacy" />
   </component>
 </project>
