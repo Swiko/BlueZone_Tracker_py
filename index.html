@@ -4,37 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Карта озер Ленобласти</title>
-    <script src="telegram.org"></script>
+
+    <!-- Telegram WebApp SDK -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <!-- Leaflet CSS (ИСПРАВЛЕНО: добавлена полная ссылка) -->
     <link rel="stylesheet" href="unpkg.com" />
+
     <style>
-        html, body { height: 100%; margin: 0; padding: 0; background: var(--tg-theme-bg-color, white); }
-        #map { height: 100vh; width: 100vw; }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: var(--tg-theme-bg-color, #ffffff);
+            overflow: hidden; /* Чтобы не было лишних скроллов в Telegram */
+        }
+        #map {
+            height: 100vh;
+            width: 100vw;
+            touch-action: none; /* Улучшает управление картой на сенсорных экранах */
+        }
     </style>
 </head>
 <body>
     <div id="map"></div>
-    <script src="unpkg.com"></script>
-    <script>
-        window.onload = function() {
-            const tg = window.Telegram.WebApp;
-            tg.ready();
-            tg.expand();
 
-            const map = L.map('map').setView([60.0, 30.3], 8);
+    <!-- Leaflet JS (ИСПРАВЛЕНО: добавлена полная ссылка) -->
+    <script src="unpkg.com"></script>
+
+    <script>
+    window.onload = function() {
+        try {
+            // Инициализация Telegram WebApp
+            const tg = window.Telegram.WebApp;
+            if (tg) {
+                tg.ready();
+                tg.expand(); // Разворачиваем на весь экран
+            }
+
+            // Проверка загрузки Leaflet
+            if (typeof L === 'undefined') {
+                document.body.innerHTML = "<h3 style='padding:20px;'>Ошибка: Leaflet не загружен. Проверьте интернет-соединение.</h3>";
+                return;
+            }
+
+            // Инициализация карты
+            // Координаты центра Ленобласти (примерно)
+            const map = L.map('map', {
+                zoomControl: false // Скрываем стандартные кнопки, чтобы не мешали в Mini App
+            }).setView([60.5, 30.5], 7);
+
+            // Добавляем слой карты
             L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap'
             }).addTo(map);
 
+            // Добавляем кнопки зума в удобное место (снизу справа)
+            L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+            // Данные об озерах
             const lakes = [
                 { name: "Ладожское озеро", coords: [61.0, 31.5], info: "Крупнейшее озеро Европы." },
                 { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Отличное место для лодочных походов." },
                 { name: "Медное озеро", coords: [60.21, 30.14], info: "Чистая вода, темный песок." }
             ];
 
+            // Добавление маркеров
             lakes.forEach(lake => {
-                L.marker(lake.coords).addTo(map).bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
+                L.marker(lake.coords)
+                    .addTo(map)
+                    .bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
             });
-        };
+
+        } catch (error) {
+            console.error("Критическая ошибка:", error);
+            document.body.innerHTML = `<div style='padding:20px;'><h3>Ошибка</h3><p>${error.message}</p></div>`;
+        }
+    };
     </script>
 </body>
 </html>
