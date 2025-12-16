@@ -5,67 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Карта озер Ленобласти</title>
 
-    <!-- 1. Скрипт Telegram ВСЕГДА первым -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-    <!-- 2. Leaflet CSS с альтернативного CDN (cdnjs обычно стабильнее) -->
-    <link rel="stylesheet" href="cdnjs.cloudflare.com" />
-
     <style>
-        html, body { height: 100%; margin: 0; padding: 0; background: var(--tg-theme-bg-color, #fff); overflow: hidden; }
-        #map { height: 100vh; width: 100vw; touch-action: none; }
-        .error-msg { padding: 20px; text-align: center; font-family: sans-serif; }
+        /* ВСТРОЕННЫЙ LEAFLET CSS */
+        .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane > svg,.leaflet-pane > canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden;-ms-touch-action:none;touch-action:none;cursor:grab;background:#ddd;outline-width:0}.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}
+        .leaflet-fade-anim .leaflet-tile,.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-tile-loaded,.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}
+        .leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}
+        .leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,0.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:black}.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console', Monaco, monospace;text-indent:1px}
+        .leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px;background:white;box-shadow:0 3px 14px rgba(0,0,0,0.4)}.leaflet-popup-content{margin:13px 19px;line-height:1.4;min-width:50px}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);background:white;box-shadow:0 3px 14px rgba(0,0,0,0.4)}
+
+        /* СТИЛИ ПРИЛОЖЕНИЯ */
+        html, body { height: 100%; margin: 0; padding: 0; background: var(--tg-theme-bg-color, #ffffff); overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        #map { height: 100vh; width: 100vw; }
     </style>
 </head>
 <body>
     <div id="map"></div>
 
-    <!-- 3. Leaflet JS -->
+    <!-- ВСТРОЕННЫЙ LEAFLET JS -->
     <script src="cdnjs.cloudflare.com"></script>
 
     <script>
-    function initApp() {
+    window.onload = function() {
         const tg = window.Telegram.WebApp;
         tg.ready();
         tg.expand();
 
-        // Проверяем наличие объекта L (Leaflet)
+        // Проверяем наличие библиотеки
         if (typeof L === 'undefined') {
-            document.getElementById('map').innerHTML =
-                `<div class="error-msg">
-                    <h3>Ошибка загрузки библиотек</h3>
-                    <p>Не удалось подключиться к серверу карт. Проверьте интернет или VPN.</p>
-                    <button onclick="location.reload()">Обновить</button>
-                </div>`;
+            document.body.innerHTML = "<div style='padding:50px; text-align:center;'><h3>Ошибка загрузки карты</h3><p>Пожалуйста, проверьте интернет-соединение.</p></div>";
             return;
         }
 
-        try {
-            const map = L.map('map', { zoomControl: false }).setView([60.5, 30.5], 8);
+        // Инициализация карты
+        const map = L.map('map', {
+            zoomControl: false,
+            attributionControl: false
+        }).setView([60.3, 30.3], 8);
 
-            // Используем стандартный слой OpenStreetMap (более надежный адрес)
-            L.tileLayer('tile.openstreetmap.org{z}/{x}/{y}.png', {
-                attribution: '&copy; OpenStreetMap'
-            }).addTo(map);
+        // Используем OSM тайлы
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-            L.control.zoom({ position: 'bottomright' }).addTo(map);
+        // Кнопки зума снизу (удобно для пальцев)
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-            const lakes = [
-                { name: "Ладожское озеро", coords: [61.0, 31.5], info: "Крупнейшее озеро Европы." },
-                { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Популярно для походов." },
-                { name: "Медное озеро", coords: [60.21, 30.14], info: "Чистая вода." }
-            ];
+        const lakes = [
+            { name: "Ладожское озеро", coords: [61.0, 31.5], info: "Крупнейшее озеро Европы." },
+            { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Отличное место для лодочных походов." },
+            { name: "Медное озеро", coords: [60.21, 30.14], info: "Чистая вода, темный песок." }
+        ];
 
-            lakes.forEach(lake => {
-                L.marker(lake.coords).addTo(map).bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
-            });
-        } catch (e) {
-            console.error(e);
-        }
-    }
-
-    // Запуск после полной загрузки страницы
-    window.addEventListener('load', initApp);
+        lakes.forEach(lake => {
+            L.marker(lake.coords).addTo(map).bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
+        });
+    };
     </script>
 </body>
 </html>
