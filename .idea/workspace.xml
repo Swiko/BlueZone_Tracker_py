@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="test_013">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/cron_update.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/update_lakes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="test_014">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cron_update.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cron_update.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779724288204</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="test_014">
+      <option name="closed" value="true" />
+      <created>1779725037022</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1779725037022</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +199,7 @@
     <MESSAGE value="test_011" />
     <MESSAGE value="test_012" />
     <MESSAGE value="test_013" />
-    <option name="LAST_COMMIT_MESSAGE" value="test_013" />
+    <MESSAGE value="test_014" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_014" />
   </component>
 </project>
