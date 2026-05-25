@@ -30,20 +30,29 @@ function updateUI() {
     const loadingText = document.getElementById('loading-text');
     if (loadingText) loadingText.remove();
 
+    // Эти переменные теперь считают ТОЛЬКО отфильтрованные и найденные озера
     let total = 0, safe = 0, unsafe = 0;
 
     allLakesData.forEach((lake) => {
-        total++;
-        if (lake.status.toLowerCase() === 'safe') safe++; else unsafe++;
-
-        // Фильтрация
+        // 1. Сначала проверяем фильтр по статусу безопасности
         if (currentFilter === 'safe' && lake.status.toLowerCase() !== 'safe') return;
         if (currentFilter === 'unsafe' && lake.status.toLowerCase() === 'safe') return;
+
+        // 2. Затем проверяем текстовый поиск (по названию или району)
+        const nameMatch = lake.name.toLowerCase().includes(searchQuery);
+        const districtMatch = lake.district.toLowerCase().includes(searchQuery);
+        if (searchQuery && !nameMatch && !districtMatch) return;
+
+        // --- Если код дошел сюда, значит озеро прошло ВСЕ фильтры и будет показано ---
+
+        // Пополняем счетчики только для тех, кто прошел фильтрацию
+        total++;
+        if (lake.status.toLowerCase() === 'safe') safe++; else unsafe++;
 
         const badgeClass = lake.status.toLowerCase() === 'safe' ? 'status-safe' : 'status-unsafe';
         const color = lake.status.toLowerCase() === 'safe' ? '#2b8a3e' : '#c92a2a';
 
-        // 1. Создаем маркер в виде цветного круга прямо по географическим координатам
+        // Создаем маркер в виде цветного круга
         const marker = L.circleMarker(lake.coordinates, {
             radius: 8,
             fillColor: color,
@@ -53,7 +62,6 @@ function updateUI() {
             fillOpacity: 0.9
         });
 
-        // Создаем всплывающее окно (Popup) при клике или наведении на маркер
         const popupContent = `
             <h3>${lake.name}</h3>
             <p><b>District:</b> ${lake.district}</p>
@@ -63,28 +71,21 @@ function updateUI() {
         `;
         marker.bindPopup(popupContent);
 
-        // Эффект увеличения маркера при наведении мыши
-        marker.on('mouseover', function () {
-            this.setRadius(12);
-        });
-        marker.on('mouseout', function () {
-            this.setRadius(8);
-        });
+        marker.on('mouseover', function () { this.setRadius(12); });
+        marker.on('mouseout', function () { this.setRadius(8); });
 
-        // Добавляем маркер в нашу группу на карте
+        // Добавляем маркер на карту (покажутся только отфильтрованные)
         markersLayer.addLayer(marker);
 
-        // 2. Создаем карточку в правом сайдбаре
+        // Создаем карточку в правом сайдбаре
         const card = document.createElement('div');
         card.className = 'lake-item';
-
         card.innerHTML = `
             <h3>${lake.name}</h3>
             <p><b>District:</b> ${lake.district}</p>
             <p>Status: <span class="${badgeClass}">${lake.status}</span></p>
         `;
 
-        // Плавный подлет карты к озеру и открытие попапа при клике на сайдбар
         card.addEventListener('click', () => {
             map.setView(lake.coordinates, 12, { animate: true, duration: 1.5 });
             marker.openPopup();
@@ -93,10 +94,12 @@ function updateUI() {
         container.appendChild(card);
     });
 
+    // Обновляем плашки статистики актуальными живыми цифрами
     document.getElementById('total-lakes').innerText = total;
     document.getElementById('safe-lakes').innerText = safe;
     document.getElementById('unsafe-lakes').innerText = unsafe;
 }
+
 
 // Загрузка статичного JSON
 async function fetchLakesData() {
