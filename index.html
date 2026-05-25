@@ -104,6 +104,10 @@
         </div>
 
         <div class="filter-section">
+            <!-- Поле текстового поиска -->
+            <label id="search-label" for="lake-search" style="font-weight: 500;">Search lake or district:</label>
+            <input type="text" id="lake-search" placeholder="Type name or district..." style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 12px; border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box;">
+
             <label for="status-filter" style="font-weight: 500;">Filter by Safety Status:</label>
             <select id="status-filter" style="width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;">
                 <option value="all">Show All Lakes</option>
@@ -111,6 +115,7 @@
                 <option value="unsafe">Unsafe Only</option>
             </select>
         </div>
+
 
         <div id="lakes-container">
             <p id="loading-text" style="color: #888; text-align: center;">Loading database...</p>

@@ -2,6 +2,7 @@ let allLakesData = [];
 let currentFilter = 'all';
 let map;
 let markersLayer; // Группа для динамического управления маркерами при фильтрации
+let searchQuery = '';
 
 // Инициализация карты OpenStreetMap
 function initMap() {
@@ -121,6 +122,13 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
         map.invalidateSize();
     });
+
+    // ТОЧЕЧНОЕ ДОБАВЛЕНИЕ: Слушатель для поля поиска
+    document.getElementById('lake-search').addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        updateUI(); // Перерисовываем карту и сайдбар при каждом вводе буквы
+    });
+
 
     document.getElementById('status-filter').addEventListener('change', (e) => {
         currentFilter = e.target.value;
