@@ -112,8 +112,19 @@ window.addEventListener('DOMContentLoaded', () => {
     initMap(); // Сначала запускаем карту
     fetchLakesData(); // Затем грузим данные
 
+    // ИСПРАВЛЕНИЕ СЕРОЙ КАРТЫ: Принудительный пересчет размеров контейнера
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 200);
+
+    // Пересчет при изменении размеров экрана (например, поворот телефона)
+    window.addEventListener('resize', () => {
+        map.invalidateSize();
+    });
+
     document.getElementById('status-filter').addEventListener('change', (e) => {
         currentFilter = e.target.value;
         updateUI();
     });
 });
+
