@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="test_016">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lakes.json" beforeDir="false" afterPath="$PROJECT_DIR$/lakes.json" afterDir="false" />
-    </list>
+    <list default="true" id="047d5296-4175-4a84-854c-3d6b6f9ff634" name="Changes" comment="debug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779726151360</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="debug">
+      <option name="closed" value="true" />
+      <created>1779726386984</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1779726386984</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +224,7 @@
     <MESSAGE value="test_014" />
     <MESSAGE value="test_015" />
     <MESSAGE value="test_016" />
-    <option name="LAST_COMMIT_MESSAGE" value="test_016" />
+    <MESSAGE value="debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug" />
   </component>
 </project>
