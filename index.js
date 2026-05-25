@@ -8,14 +8,11 @@ function initMap() {
     // Устанавливаем центр карты на Ленинградскую область [Широта, Долгота] и начальный зум
     map = L.map('map').setView([60.0, 30.6], 8);
 
-    // Подгружаем защищенный слой тайлов OpenStreetMap
-// Подгружаем защищенный слой тайлов CartoDB Voyager с правильным протоколом https
-    L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
+    // ИСПРАВЛЕННЫЙ АДРЕС: Используем стабильный CDN для англоязычной карты CartoDB Voyager
+    L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors &copy; <a href="https://carto.com">CARTO</a>'
     }).addTo(map);
-
-
 
     // Создаем слой-группу для маркеров, чтобы легко очищать их при фильтрации
     markersLayer = L.layerGroup().addTo(map);
