@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Lake Ladoga (Kokoirevo)",
+    "district": "Vsevolozhsky",
+    "status": "Safe",
+    "coordinates": [60.0242, 31.0694],
+    "description": "Sandy beach on the shore of the largest lake in Europe. Monitoring shows water conforms to safety standards."
+  },
+  {
+    "name": "Lake Lembolovskoye",
+    "district": "Vsevolozhsky",
+    "status": "Unsafe",
+    "coordinates": [60.3111, 30.3156],
+    "description": "Popular recreation area near Vasaskari, but swimming is currently prohibited due to bacterial pollution metrics."
+  },
+  {
+    "name": "Lake Mednoye",
+    "district": "Vsevolozhsky",
+    "status": "Safe",
+    "coordinates": [60.2038, 30.1388],
+    "description": "Artificial reservoir with dark peat water. Passed safety inspection tests successfully."
+  },
+  {
+    "name": "Lake Krasnoye",
+    "district": "Priozersky",
+    "status": "Unsafe",
+    "coordinates": [60.5583, 29.7417],
+    "description": "Beautiful lake near Korobitsyno ski resort. Environmental warning issued: high iron concentration."
+  },
+  {
+    "name": "Lake Vuoksa (Priozersk beach)",
+    "district": "Priozersky",
+    "status": "Safe",
+    "coordinates": [61.0344, 30.1172],
+    "description": "Clean municipal beach area. Clear water, safe for family swimming activities."
+  }
+]

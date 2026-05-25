@@ -1,65 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Карта озер Ленобласти</title>
-
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakes of Leningrad Oblast</title>
     <style>
-        /* ВСТРОЕННЫЙ LEAFLET CSS */
-        .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane > svg,.leaflet-pane > canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden;-ms-touch-action:none;touch-action:none;cursor:grab;background:#ddd;outline-width:0}.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-zoom-box{width:0;height:0;-moz-box-sizing:border-box;box-sizing:border-box;z-index:800}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}.leaflet-vml-shape{width:1px;height:1px}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto}.leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-control{float:left;clear:both}.leaflet-right .leaflet-control{float:right}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}
-        .leaflet-fade-anim .leaflet-tile,.leaflet-fade-anim .leaflet-popup{opacity:0;-webkit-transition:opacity .2s linear;-moz-transition:opacity .2s linear;transition:opacity .2s linear}.leaflet-fade-anim .leaflet-tile-loaded,.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}
-        .leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}
-        .leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,0.65);border-radius:4px}.leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:black}.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:bold 18px 'Lucida Console', Monaco, monospace;text-indent:1px}
-        .leaflet-popup{position:absolute;text-align:center;margin-bottom:20px}.leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:12px;background:white;box-shadow:0 3px 14px rgba(0,0,0,0.4)}.leaflet-popup-content{margin:13px 19px;line-height:1.4;min-width:50px}.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-left:-20px;overflow:hidden;pointer-events:none}.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);background:white;box-shadow:0 3px 14px rgba(0,0,0,0.4)}
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+        #map-container {
+            flex: 1;
+            height: 100vh;
+            position: relative;
+            background-color: #bcd6fc;
+            cursor: grab;
+            overflow: hidden;
+        }
+        #map-container:active {
+            cursor: grabbing;
+        }
+        #svg-viewport {
+            position: absolute;
+            transform-origin: 0 0;
+            width: 1000px;
+            height: 800px;
+        }
+        .map-marker {
+            cursor: pointer;
+            transition: transform 0.15s, r 0.15s;
+        }
+        .map-marker:hover {
+            transform: scale(1.4);
+            transform-origin: center;
+        }
+        .sidebar {
+            width: 350px;
+            padding: 20px;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-sizing: border-box;
+            background: white;
+            z-index: 1000;
+        }
+        .statistics, .filter-section {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .lake-item {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .lake-item:hover {
+            background-color: #f1f3f5;
+        }
+        .status-safe { color: #2b8a3e; font-weight: bold; }
+        .status-unsafe { color: #c92a2a; font-weight: bold; }
+        h3 { margin: 0 0 5px 0; font-size: 1.1rem; color: #333; }
+        p { margin: 3px 0; color: #666; font-size: 0.9rem; }
 
-        /* СТИЛИ ПРИЛОЖЕНИЯ */
-        html, body { height: 100%; margin: 0; padding: 0; background: var(--tg-theme-bg-color, #ffffff); overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        #map { height: 100vh; width: 100vw; }
+        .custom-popup {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.96);
+            color: #212529;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            display: none;
+            z-index: 2000;
+            max-width: 260px;
+            pointer-events: none;
+            border: 1px solid #dee2e6;
+            font-size: 13px;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
-    <div id="map"></div>
 
-    <!-- ВСТРОЕННЫЙ LEAFLET JS -->
-    <script src="cdnjs.cloudflare.com"></script>
+    <div id="map-container">
+        <svg id="svg-viewport" viewBox="0 0 1000 800">
+            <!-- Контур суши -->
+            <path d="M 50,450 L 120,400 L 150,410 L 180,350 L 160,280 L 250,250 L 320,180 L 380,210 L 400,150 L 480,160 L 520,100 L 590,140 L 620,80 L 720,120 L 780,250 L 850,220 L 920,340 L 890,520 L 950,580 L 820,680 L 710,620 L 650,710 L 520,640 L 410,690 L 350,610 L 220,640 L 180,550 L 110,580 Z"
+                  fill="#f1f5f9" stroke="#cbd5e1" stroke-width="3" />
 
-    <script>
-    window.onload = function() {
-        const tg = window.Telegram.WebApp;
-        tg.ready();
-        tg.expand();
+            <!-- Сетка дорог -->
+            <path d="M 320,180 Q 420,380 410,690 M 180,350 L 480,160 M 250,250 L 720,120"
+                  fill="none" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="5,5" />
 
-        // Проверяем наличие библиотеки
-        if (typeof L === 'undefined') {
-            document.body.innerHTML = "<div style='padding:50px; text-align:center;'><h3>Ошибка загрузки карты</h3><p>Пожалуйста, проверьте интернет-соединение.</p></div>";
-            return;
-        }
+            <!-- Контур Ладожского озера -->
+            <path d="M 420,170 Q 500,100 620,180 T 560,380 Q 460,330 420,170 Z"
+                  fill="#bcd6fc" stroke="#93c5fd" stroke-width="2" />
 
-        // Инициализация карты
-        const map = L.map('map', {
-            zoomControl: false,
-            attributionControl: false
-        }).setView([60.3, 30.3], 8);
+            <!-- Слой маркеров -->
+            <g id="svg-markers-group"></g>
+        </svg>
+        <div id="map-popup" class="custom-popup"></div>
+    </div>
 
-        // Используем OSM тайлы
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    <div class="sidebar">
+        <h2>Lakes of Leningrad Oblast</h2>
+        <p>Eco-monitoring application compiled on a 100% autonomous vector GIS engine.</p>
 
-        // Кнопки зума снизу (удобно для пальцев)
-        L.control.zoom({ position: 'bottomright' }).addTo(map);
+        <div class="statistics">
+            <h4>📊 Quick Statistics</h4>
+            <p>Total Lakes Checked: <strong id="total-lakes">0</strong></p>
+            <p>Safe (Allowed): <strong id="safe-lakes" class="status-safe">0</strong></p>
+            <p>Unsafe (Prohibited): <strong id="unsafe-lakes" class="status-unsafe">0</strong></p>
+        </div>
 
-        const lakes = [
-            { name: "Ладожское озеро", coords: [61.0, 31.5], info: "Крупнейшее озеро Европы." },
-            { name: "Озеро Вуокса", coords: [60.9, 29.9], info: "Отличное место для лодочных походов." },
-            { name: "Медное озеро", coords: [60.21, 30.14], info: "Чистая вода, темный песок." }
-        ];
+        <div class="filter-section">
+            <label for="status-filter" style="font-weight: 500;">Filter by Safety Status:</label>
+            <select id="status-filter" style="width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;">
+                <option value="all">Show All Lakes</option>
+                <option value="safe">Safe Only</option>
+                <option value="unsafe">Unsafe Only</option>
+            </select>
+        </div>
 
-        lakes.forEach(lake => {
-            L.marker(lake.coords).addTo(map).bindPopup(`<b>${lake.name}</b><br>${lake.info}`);
-        });
-    };
-    </script>
+        <div id="lakes-container">
+            <p id="loading-text" style="color: #888; text-align: center;">Loading database...</p>
+        </div>
+    </div>
+
+    <!-- Путь изменен на относительный для GitHub Pages -->
+    <script src="index.js"></script>
 </body>
 </html>
