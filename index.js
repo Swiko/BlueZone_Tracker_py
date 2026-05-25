@@ -1,87 +1,80 @@
 let allLakesData = [];
 let currentFilter = 'all';
+let map;
+let markersLayer; // Группа для динамического управления маркерами при фильтрации
 
-const mapContainer = document.getElementById('map-container');
-const viewport = document.getElementById('svg-viewport');
-const popup = document.getElementById('map-popup');
+// Инициализация карты OpenStreetMap
+function initMap() {
+    // Устанавливаем центр карты на Ленинградскую область [Широта, Долгота] и начальный зум
+    map = L.map('map').setView([60.0, 30.6], 8);
 
-let transformState = { x: -100, y: -80, scale: 1.2 };
-let isDragging = false;
-let dragStart = { x: 0, y: 0 };
+    // Подгружаем защищенный слой тайлов OpenStreetMap
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
-function applyTransform() {
-    viewport.style.transform = `translate(${transformState.x}px, ${transformState.y}px) scale(${transformState.scale})`;
-}
-
-// Проекция координат Ленобласти в пиксели SVG слоя (viewBox 1000x800)
-function projectGeoToSvg(coords) {
-    const lat = coords[0];
-    const lon = coords[1];
-
-    const minLat = 58.5, maxLat = 61.5;
-    const minLon = 28.0, maxLon = 34.5;
-
-    const x = ((lon - minLon) / (maxLon - minLon)) * 800 + 100;
-    const y = (1 - (lat - minLat) / (maxLat - minLat)) * 600 + 100;
-
-    return { x, y };
+    // Создаем слой-группу для маркеров, чтобы легко очищать их при фильтрации
+    markersLayer = L.layerGroup().addTo(map);
 }
 
 function updateUI() {
     const container = document.getElementById('lakes-container');
-    const markersGroup = document.getElementById('svg-markers-group');
-
-    if (!container || !markersGroup) return;
+    if (!container) return;
 
     container.innerHTML = '';
-    markersGroup.innerHTML = '';
+    markersLayer.clearLayers(); // Стираем старые маркеры перед отрисовкой новых
 
     const loadingText = document.getElementById('loading-text');
     if (loadingText) loadingText.remove();
 
     let total = 0, safe = 0, unsafe = 0;
 
-    allLakesData.forEach((lake, index) => {
+    allLakesData.forEach((lake) => {
         total++;
         if (lake.status.toLowerCase() === 'safe') safe++; else unsafe++;
 
+        // Фильтрация
         if (currentFilter === 'safe' && lake.status.toLowerCase() !== 'safe') return;
         if (currentFilter === 'unsafe' && lake.status.toLowerCase() === 'safe') return;
 
-        const pos = projectGeoToSvg(lake.coordinates);
+        const badgeClass = lake.status.toLowerCase() === 'safe' ? 'status-safe' : 'status-unsafe';
         const color = lake.status.toLowerCase() === 'safe' ? '#2b8a3e' : '#c92a2a';
 
-        // Создание SVG элемента с корректным пространством имен
-        const circle = document.createElementNS("http://w3.org", "circle");
-        circle.setAttribute("cx", pos.x);
-        circle.setAttribute("cy", pos.y);
-        circle.setAttribute("r", "7");
-        circle.setAttribute("fill", color);
-        circle.setAttribute("stroke", "#ffffff");
-        circle.setAttribute("stroke-width", "2");
-        circle.setAttribute("class", "map-marker");
-        circle.setAttribute("id", `marker-${index}`);
-
-        circle.addEventListener('mouseenter', (e) => {
-            popup.innerHTML = `<strong>${lake.name}</strong><br><span style="color:#666;">District: ${lake.district}</span><br><p style="margin:5px 0 0 0;font-size:12px;">${lake.description}</p>`;
-            popup.style.display = 'block';
-
-            const screenX = pos.x * transformState.scale + transformState.x;
-            const screenY = pos.y * transformState.scale + transformState.y;
-
-            popup.style.left = `${screenX + 15}px`;
-            popup.style.top = `${screenY - 15}px`;
+        // 1. Создаем маркер в виде цветного круга прямо по географическим координатам
+        const marker = L.circleMarker(lake.coordinates, {
+            radius: 8,
+            fillColor: color,
+            color: '#ffffff',
+            weight: 2,
+            opacity: 1,
+            fillOpacity: 0.9
         });
 
-        circle.addEventListener('mouseleave', () => {
-            popup.style.display = 'none';
+        // Создаем всплывающее окно (Popup) при клике или наведении на маркер
+        const popupContent = `
+            <h3>${lake.name}</h3>
+            <p><b>District:</b> ${lake.district}</p>
+            <p><b>Status:</b> <span class="${badgeClass}">${lake.status}</span></p>
+            <hr style="border:0; border-top:1px solid #eee; margin:8px 0;">
+            <p>${lake.description}</p>
+        `;
+        marker.bindPopup(popupContent);
+
+        // Эффект увеличения маркера при наведении мыши
+        marker.on('mouseover', function () {
+            this.setRadius(12);
+        });
+        marker.on('mouseout', function () {
+            this.setRadius(8);
         });
 
-        markersGroup.appendChild(circle);
+        // Добавляем маркер в нашу группу на карте
+        markersLayer.addLayer(marker);
 
+        // 2. Создаем карточку в правом сайдбаре
         const card = document.createElement('div');
         card.className = 'lake-item';
-        const badgeClass = lake.status.toLowerCase() === 'safe' ? 'status-safe' : 'status-unsafe';
 
         card.innerHTML = `
             <h3>${lake.name}</h3>
@@ -89,15 +82,10 @@ function updateUI() {
             <p>Status: <span class="${badgeClass}">${lake.status}</span></p>
         `;
 
+        // Плавный подлет карты к озеру и открытие попапа при клике на сайдбар
         card.addEventListener('click', () => {
-            const containerRect = mapContainer.getBoundingClientRect();
-            transformState.scale = 2.5;
-            transformState.x = containerRect.width / 2 - pos.x * transformState.scale;
-            transformState.y = containerRect.height / 2 - pos.y * transformState.scale;
-            applyTransform();
-
-            document.querySelectorAll('.map-marker').forEach(c => c.setAttribute("r", "7"));
-            circle.setAttribute("r", "12");
+            map.setView(lake.coordinates, 12, { animate: true, duration: 1.5 });
+            marker.openPopup();
         });
 
         container.appendChild(card);
@@ -108,43 +96,7 @@ function updateUI() {
     document.getElementById('unsafe-lakes').innerText = unsafe;
 }
 
-// Drag-n-drop карты
-mapContainer.addEventListener('mousedown', (e) => {
-    if (e.target.classList.contains('map-marker')) return;
-    isDragging = true;
-    dragStart = { x: e.clientX - transformState.x, y: e.clientY - transformState.y };
-});
-
-window.addEventListener('mouseup', () => { isDragging = false; });
-
-mapContainer.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    transformState.x = e.clientX - dragStart.x;
-    transformState.y = e.clientY - dragStart.y;
-    applyTransform();
-});
-
-// Масштабирование колесиком
-mapContainer.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    const zoomFactor = e.deltaY < 0 ? 1.15 : 0.85;
-    const rect = mapContainer.getBoundingClientRect();
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-
-    const svgX = (mouseX - transformState.x) / transformState.scale;
-    const svgY = (mouseY - transformState.y) / transformState.scale;
-
-    transformState.scale *= zoomFactor;
-    transformState.scale = Math.max(0.6, Math.min(transformState.scale, 6));
-
-    transformState.x = mouseX - svgX * transformState.scale;
-    transformState.y = mouseY - svgY * transformState.scale;
-
-    applyTransform();
-}, { passive: false });
-
-// Прямой статический запрос к JSON файлу проекта
+// Загрузка статичного JSON
 async function fetchLakesData() {
     try {
         const response = await fetch('lakes.json');
@@ -156,8 +108,8 @@ async function fetchLakesData() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    applyTransform();
-    fetchLakesData();
+    initMap(); // Сначала запускаем карту
+    fetchLakesData(); // Затем грузим данные
 
     document.getElementById('status-filter').addEventListener('change', (e) => {
         currentFilter = e.target.value;
