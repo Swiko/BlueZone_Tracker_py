@@ -6,7 +6,7 @@
     <title>Lakes of Leningrad Oblast</title>
     <!-- Подключаем стили Leaflet для корректного отображения карты -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <style>
+        <style>
         body {
             margin: 0;
             font-family: "Segoe UI", Roboto, sans-serif;
@@ -16,14 +16,18 @@
             overflow: hidden;
             background-color: #f8f9fa;
         }
-        /* Новый контейнер для полноценной OSM карты */
+
+        /* Контейнер для полноценной OSM карты */
         #map {
             flex: 1;
             height: 100vh;
             z-index: 1;
         }
+
+        /* Сайдбар управления */
         .sidebar {
             width: 350px;
+            height: 100vh;
             padding: 20px;
             box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             overflow-y: auto;
@@ -34,12 +38,14 @@
             background: white;
             z-index: 1000;
         }
+
         .statistics, .filter-section {
             border: 1px solid #dee2e6;
             padding: 15px;
             border-radius: 8px;
             background-color: #fff;
         }
+
         .lake-item {
             padding: 12px;
             border-bottom: 1px solid #eee;
@@ -47,9 +53,11 @@
             border-radius: 6px;
             transition: background 0.2s;
         }
+
         .lake-item:hover {
             background-color: #f1f3f5;
         }
+
         .status-safe { color: #2b8a3e; font-weight: bold; }
         .status-unsafe { color: #c92a2a; font-weight: bold; }
         h3 { margin: 0 0 5px 0; font-size: 1.1rem; color: #333; }
@@ -58,6 +66,25 @@
         /* Стилизация попапов Leaflet */
         .leaflet-popup-content h3 { margin: 0 0 5px 0; font-size: 14px; }
         .leaflet-popup-content p { margin: 0; font-size: 12px; color: #444; }
+
+        /* 📱 АДАПТИВНАЯ ВЕРСТКА ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column; /* Элементы встают друг под друга */
+            }
+
+            #map {
+                width: 100%;
+                height: 50vh; /* Карта занимает верхнюю половину экрана */
+                flex: none;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: 50vh; /* Сайдбар занимает нижнюю половину экрана */
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1); /* Тень сдвигается вверх */
+            }
+        }
     </style>
 </head>
 <body>
