@@ -8,11 +8,12 @@ function initMap() {
     // Устанавливаем центр карты на Ленинградскую область [Широта, Долгота] и начальный зум
     map = L.map('map').setView([60.0, 30.6], 8);
 
-    // ИСПРАВЛЕНИЕ: Используем официальный, самый стабильный сервер OpenStreetMap без блокировок CSP/CORS
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    // ИСПОЛЬЗУЕМ АНГЛОЯЗЫЧНЫЙ СЕРВЕР: Подложка OSM Humanitarian с принудительными английскими тегами
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         maxZoom: 19,
-        attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, Tiles style by Humanitarian OpenStreetMap Team'
     }).addTo(map);
+
 
 
     // Создаем слой-группу для маркеров, чтобы легко очищать их при фильтрации
