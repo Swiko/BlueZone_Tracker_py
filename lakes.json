@@ -1,555 +1,555 @@
 [
   {
-    "name": "Озеро Донцо (Пляж)",
-    "district": "Волосовский район",
+    "name": "Lake Dontso (Beach)",
+    "district": "Volosovsky District",
     "status": "Safe",
     "coordinates": [59.4204, 29.7712],
-    "description": "Уникальный водоем на месте бывших крьерных разработок. Известен как 'Ленинградские Мальдивы' благодаря бирюзовой воде и белому песку."
+    "description": "A unique water body located on the site of former quarry workings. Known as the 'Leningrad Maldives' due to its turquoise water and white sand."
   },
   {
-    "name": "Река Луга (д. Большой Сабск)",
-    "district": "Волосовский район",
+    "name": "Luga River (Bolshoy Sabsk village)",
+    "district": "Volosovsky District",
     "status": "Safe",
     "coordinates": [59.1364, 29.0205],
-    "description": "Популярная пляжная зона отдыха местных жителей на берегу реки Луга у поселения Большой Сабск."
+    "description": "A popular beach recreation area for local residents on the banks of the Luga River near the Bolshoy Sabsk settlement."
   },
   {
-    "name": "Река Сясь (городской пляж)",
-    "district": "Волховский район",
+    "name": "Syas River (City Beach)",
+    "district": "Volkhovsky District",
     "status": "Safe",
     "coordinates": [60.1384, 32.4285],
-    "description": "Официально оборудованный муниципальный пляж в черте города Сясьстрой."
+    "description": "An officially equipped municipal beach within the city limits of Syasstroy."
   },
   {
-    "name": "Ладожское озеро (мыс Осиновец)",
-    "district": "Всеволожский район",
+    "name": "Lake Ladoga (Cape Osinovets)",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [60.1171, 31.0772],
-    "description": "Чистый песчаный пляж около знаменитого Осиновецкого маяка. Оборудованная зона отдыха."
+    "description": "A clean sandy beach near the famous Osinovetsky Lighthouse. It features an equipped recreation area."
   },
   {
-    "name": "Ладожское озеро (д. Кошкино)",
-    "district": "Всеволожский район",
+    "name": "Lake Ladoga (Koshkino village)",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [59.9723, 31.0315],
-    "description": "Пляжная зона отдыха в Морозовском городском поселении у деревни Кошкино."
+    "description": "A beach recreation area in the Morozov urban settlement near the village of Koshkino."
   },
   {
-    "name": "Ладожское озеро (д. Кокорево)",
-    "district": "Всеволожский район",
+    "name": "Lake Ladoga (Kokorevo village)",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [60.0531, 31.0734],
-    "description": "Протяженный естественный песчаный пляж на побережье Ладоги, любимое место отдыха петербуржцев."
+    "description": "A long, natural sandy beach on the coast of Lake Ladoga, a favorite holiday destination for St. Petersburg residents."
   },
   {
-    "name": "Озеро Лемболовское (ст. Лемболово)",
-    "district": "Всеволожский район",
+    "name": "Lake Lembolovskoye (Lembolovo station)",
+    "district": "Vsevolozhsky District",
     "status": "Unsafe",
     "coordinates": [60.3111, 30.3156],
-    "description": "Живописное озеро, окруженное сосновым лесом, однако вода периодически не проходит микробиологические тесты."
+    "description": "A picturesque lake surrounded by a pine forest, but the water periodically fails microbiological tests."
   },
   {
-    "name": "Озеро Медное (Меднозаводской)",
-    "district": "Всеволожский район",
+    "name": "Lake Mednoye (Mednozavodskoy)",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [60.2038, 30.1388],
-    "description": "Небольшой искусственный водоем со специфической темной торфяной водой, безопасной для купания."
+    "description": "A small artificial reservoir with specific dark peat water that is safe for swimming."
   },
   {
-    "name": "Озеро Коркинское",
-    "district": "Всеволожский район",
+    "name": "Lake Korkinskoye",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [59.9125, 30.7412],
-    "description": "Обустроенный чистый пляж с развитой курортной инфраструктурой недалеко от Колтушей."
+    "description": "An equipped clean beach with a developed resort infrastructure not far from Koltushi."
   },
   {
-    "name": "Озеро Кавголовское (Токсово)",
-    "district": "Всеволожский район",
+    "name": "Lake Kavgolovskoye (Toksovo)",
+    "district": "Vsevolozhsky District",
     "status": "Unsafe",
     "coordinates": [60.1652, 30.5234],
-    "description": "Крупное озеро рядом со спортивными базами Токсово. Высокая антропогенная нагрузка."
+    "description": "A large lake next to the Toksovo sports bases. It experiences a high anthropogenic load."
   },
   {
-    "name": "Озеро Хепоярви",
-    "district": "Всеволожский район",
+    "name": "Lake Hepojarvi",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [60.1764, 30.5891],
-    "description": "Глубокое лесное озеро со светлой и чистой водой, окруженное холмистым ландшафтом."
+    "description": "A deep forest lake with clear and clean water, surrounded by a hilly landscape."
   },
   {
-    "name": "Озеро Курголовское",
-    "district": "Всеволожский район",
+    "name": "Lake Kurgolovskoye",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [60.1812, 30.5401],
-    "description": "Отделено от Кавголовского озера узким перешейком, вода здесь традиционно чище."
+    "description": "Separated from Lake Kavgolovskoye by a narrow isthmus, the water here is traditionally cleaner."
   },
   {
-    "name": "Колтушское озеро",
-    "district": "Всеволожский район",
+    "name": "Lake Koltushskoye",
+    "district": "Vsevolozhsky District",
     "status": "Unsafe",
     "coordinates": [59.9372, 30.6514],
-    "description": "Небольшое озеро в центре поселка Колтуши. Из-за застройки берегов купаться не рекомендуется."
+    "description": "A small lake in the center of the Koltushi village. Swimming is not recommended due to nearby coastal construction."
   },
   {
-    "name": "Озеро Лазурное (Мурманское ш.)",
-    "district": "Всеволожский район",
+    "name": "Lake Lazurnoye (Murmanskoye Hwy)",
+    "district": "Vsevolozhsky District",
     "status": "Safe",
     "coordinates": [59.8821, 30.9312],
-    "description": "Искусственный песчаный карьер с базой отдыха на 33-м километре Мурманского шоссе."
+    "description": "An artificial sandy quarry with a recreation center at the 33rd kilometer of the Murmansk Highway."
   },
   {
-    "name": "Озеро Ждановское (Всеволожск)",
-    "district": "Всеволожский район",
+    "name": "Lake Zhdanovskoye (Vsevolozhsk)",
+    "district": "Vsevolozhsky District",
     "status": "Unsafe",
     "coordinates": [60.0031, 30.6723],
-    "description": "Два небольших лесных озера на южной окраине Всеволожска. Пробы воды нестабильны."
+    "description": "Two small forest lakes on the southern outskirts of Vsevolozhsk. Water samples are unstable."
   },
   {
-    "name": "Финский залив (м. Смоляной)",
-    "district": "Выборгский район",
+    "name": "Gulf of Finland (Smolyanoy Cape)",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.7161, 28.7182],
-    "description": "Обновленный городской пляж Выборга в исторической части города с видом на Выборгский замок."
+    "description": "A renovated Vyborg city beach in the historic part of the town with a view of the Vyborg Castle."
   },
   {
-    "name": "Озеро Выборгское (пляж)",
-    "district": "Выборгский район",
+    "name": "Lake Vyborgskoye (Beach)",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.7243, 28.7894],
-    "description": "Водоем рекреационной зоны Выборга, регулярно инспектируемый санитарными врачами."
+    "description": "A water body in the Vyborg recreation zone, regularly inspected by sanitary authorities."
   },
   {
-    "name": "Озеро Зеркальное",
-    "district": "Выборгский район",
+    "name": "Lake Zerkalnoye",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.2312, 29.1314],
-    "description": "Одно из самых прозрачных и чистых озер на Карельском перешейке с пологим песчаным дном."
+    "description": "One of the most transparent and clean lakes on the Karelian Isthmus with a gently sloping sandy bottom."
   },
   {
-    "name": "Озеро Гладышевское",
-    "district": "Выборгский район",
+    "name": "Lake Gladyshevskoye",
+    "district": "Vyborgsky District",
     "status": "Unsafe",
     "coordinates": [60.2814, 29.4123],
-    "description": "Находится на территории одноименного заказника. Вода не соответствует нормам по железу."
+    "description": "Located on the territory of the nature reserve of the same name. The water fails to meet standards due to iron content."
   },
   {
-    "name": "Озеро Красавица (Большое Симагинское)",
-    "district": "Выборгский район",
+    "name": "Lake Krasavitsa (Bolshoye Simaginskoye)",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.2524, 29.7712],
-    "description": "Живописнейший водоем, окруженный высокими сосновыми обрывами. Популярное место кемпингов."
+    "description": "A highly picturesque water body surrounded by high pine cliffs. A popular destination for campsites."
   },
   {
-    "name": "Озеро Нахимовское",
-    "district": "Выборгский район",
+    "name": "Lake Nakhimovskoye",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.4281, 29.5123],
-    "description": "Крупное судоходное озеро, на берегу которого расположены детские лагеря и базы отдыха."
+    "description": "A large navigable lake with children's camps and recreation centers situated on its shores."
   },
   {
-    "name": "Озеро Рощинское",
-    "district": "Выборгский район",
+    "name": "Lake Roshchinskoye",
+    "district": "Vyborgsky District",
     "status": "Unsafe",
     "coordinates": [60.2594, 29.6105],
-    "description": "Озеро в черте поселка Рощино. Страдает от близости жилой застройки и дорожных стоков."
+    "description": "A lake within the boundaries of the Roshchino settlement. It suffers from proximity to residential areas and road runoff."
   },
   {
-    "name": "Озеро Высокинское",
-    "district": "Выборгский район",
+    "name": "Lake Vysokinskoye",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.2852, 28.8912],
-    "description": "Лесное чистое озеро, расположенное неподалеку от Приморска. Излюбленное место рыбаков."
+    "description": "A clean forest lake located near Primorsk. It is a favorite spot for fishermen."
   },
   {
-    "name": "Озеро Большое Лесное",
-    "district": "Выборгский район",
+    "name": "Lake Bolshoye Lesnoye",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.7812, 28.9104],
-    "description": "Небольшой водоем к северу от Выборга в окружении живописных скальных выходов."
+    "description": "A small reservoir north of Vyborg, surrounded by scenic rocky outcrops."
   },
   {
-    "name": "Озеро Пионерское",
-    "district": "Выборгский район",
+    "name": "Lake Pionerskoye",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.3612, 28.9814],
-    "description": "Длинное и глубокое озеро, соединенное протокой с Александровским озером. Вода чистая."
+    "description": "A long and deep lake connected by a channel to Lake Aleksandrovskoye. The water is clean."
   },
   {
-    "name": "Озеро Александровское",
-    "district": "Выборгский район",
+    "name": "Lake Aleksandrovskoye",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.3872, 28.9412],
-    "description": "Чистый природный водоем с каменисто-песчаными берегами в Выборгском районе."
+    "description": "A clean natural water body with stony-sandy shores in the Vyborgsky District."
   },
   {
-    "name": "Озеро Смирновское",
-    "district": "Выборгский район",
+    "name": "Lake Smirnovskoye",
+    "district": "Vyborgsky District",
     "status": "Unsafe",
     "coordinates": [60.7182, 29.0314],
-    "description": "Расположено у поселка Смирново. Фиксируются превышения по органическим показателям."
+    "description": "Located near the Smirnovo settlement. Exceedances of organic indicators are regularly recorded."
   },
   {
-    "name": "Река Луга (городской пляж Кингисеппа)",
-    "district": "Кингисеппский район",
+    "name": "Luga River (Kingisepp City Beach)",
+    "district": "Kingiseppsky District",
     "status": "Safe",
     "coordinates": [59.3734, 28.6183],
-    "description": "Главный городской пляж Кингисеппа, оборудованный спасательными постами и кабинками."
+    "description": "The main city beach of Kingisepp, equipped with rescue stations and changing cabins."
   },
   {
-    "name": "Финский залив (д. Выбье)",
-    "district": "Кингисеппский район",
+    "name": "Gulf of Finland (Vybye village)",
+    "district": "Kingiseppsky District",
     "status": "Safe",
     "coordinates": [59.6784, 28.2301],
-    "description": "Просторный дикий пляж в Нарвском заливе на территории заказника Кургальский."
+    "description": "A spacious wild beach in the Narva Bay, situated on the territory of the Kurgalsky Nature Reserve."
   },
   {
-    "name": "Озеро Липовское (Кургальский)",
-    "district": "Кингисеппский район",
+    "name": "Lake Lipovskoye (Kurgalsky)",
+    "district": "Kingiseppsky District",
     "status": "Safe",
     "coordinates": [59.6543, 28.1432],
-    "description": "Единственное соленое 'морское' озеро в Ленинградской области, обладающее целебными свойствами."
+    "description": "The only saltwater 'marine' lake in the Leningrad Oblast, known for its therapeutic properties."
   },
   {
-    "name": "Река Россонь",
-    "district": "Кингисеппский район",
+    "name": "Rosson River",
+    "district": "Kingiseppsky District",
     "status": "Safe",
     "coordinates": [59.4312, 28.1894],
-    "description": "Уникальная река, меняющая направление течения. Вода отличается высокой прозрачностью."
+    "description": "A unique river that can reverse its flow direction. The water is characterized by high transparency."
   },
   {
-    "name": "Озеро Светлое (пгт Будогощь)",
-    "district": "Киришский район",
+    "name": "Lake Svetloye (Budogoshch settlement)",
+    "district": "Kirishsky District",
     "status": "Safe",
     "coordinates": [59.2452, 32.4831],
-    "description": "Чистейший водоем в курортной лесной зоне поселка Будогощь."
+    "description": "A pristine water body located in the forested resort zone of the Budogoshch settlement."
   },
   {
-    "name": "Озеро Зеленое (Будогощь)",
-    "district": "Киришский район",
+    "name": "Lake Zelyonoye (Budogoshch)",
+    "district": "Kirishsky District",
     "status": "Safe",
     "coordinates": [59.2312, 32.4984],
-    "description": "Соседнее со Светлым озером место отдыха, вода полностью соответствует нормативам."
+    "description": "A recreation area neighboring Lake Svetloye; the water fully complies with all sanitary standards."
   },
   {
-    "name": "Река Волхов (г. Кириши)",
-    "district": "Киришский район",
+    "name": "Volkhov River (Kirishi city)",
+    "district": "Kirishsky District",
     "status": "Unsafe",
     "coordinates": [59.4523, 32.0621],
-    "description": "Городской пляж в Киришах. Купание запрещено из-за промышленных стоков выше по течению."
+    "description": "The city beach in Kirishi. Swimming is prohibited due to industrial upstream discharges."
   },
   {
-    "name": "Озеро Череменецкое",
-    "district": "Лужский район",
+    "name": "Lake Cheremenetskoye",
+    "district": "Luzhsky District",
     "status": "Safe",
     "coordinates": [58.6214, 29.8214],
-    "description": "Памятник природы. На берегах расположены Череменецкий монастырь и старинные усадьбы."
+    "description": "A natural monument. The Cheremenetsky Monastery and old noble estates are located on its shores."
   },
   {
-    "name": "Озеро Врево",
-    "district": "Лужский район",
+    "name": "Lake Vrevo",
+    "district": "Luzhsky District",
     "status": "Safe",
     "coordinates": [58.5834, 29.8412],
-    "description": "Большое, глубокое озеро с чистой водой на юге Лужского района."
+    "description": "A large, deep lake with clear water situated in the southern part of the Luzhsky District."
   },
   {
-    "name": "Озеро Омчино (г. Луга)",
-    "district": "Лужский район",
+    "name": "Lake Omchino (Luga city)",
+    "district": "Luzhsky District",
     "status": "Safe",
     "coordinates": [58.7291, 29.8142],
-    "description": "Официальная городская пляжная зона на окраине города Луга."
+    "description": "An official municipal beach area on the outskirts of the city of Luga."
   },
   {
-    "name": "Озеро Толони (г. Луга)",
-    "district": "Лужский район",
+    "name": "Lake Toloni (Luga city)",
+    "district": "Luzhsky District",
     "status": "Safe",
     "coordinates": [58.7182, 29.8654],
-    "description": "Второе официальное озеро для отдыха в черте Лужского городского поселения."
+    "description": "The second official lake for recreation within the boundaries of the Luzhsky urban settlement."
   },
   {
-    "name": "Река Луга (г. Луга)",
-    "district": "Лужский район",
+    "name": "Luga River (Luga)",
+    "district": "Luzhsky District",
     "status": "Unsafe",
     "coordinates": [58.7394, 29.8512],
-    "description": "Участки реки в черте города Луга не рекомендуются для купания из-за бактериального загрязнения."
+    "description": "Sections of the river within the city of Luga are not recommended for swimming due to bacterial contamination."
   },
   {
-    "name": "Озеро Нестеровское (Шапки)",
-    "district": "Тосненский район",
+    "name": "Lake Nesterovskoye (Shapki)",
+    "district": "Tosnensky District",
     "status": "Safe",
     "coordinates": [59.6001, 31.1823],
-    "description": "Популярный песчаный карьер в Шапках с прозрачной родниковой водой."
+    "description": "A popular sandy quarry in Shapki with transparent spring water."
   },
   {
-    "name": "Река Тосна (г. Тосно)",
-    "district": "Тосненский район",
+    "name": "Tosna River (Tosno)",
+    "district": "Tosnensky District",
     "status": "Unsafe",
     "coordinates": [59.5394, 30.8712],
-    "description": "Река Тосна в черте города загрязнена поверхностными бытовыми стоками."
+    "description": "The Tosna River within the city of Tosno is contaminated by surface domestic sewage."
   },
   {
-    "name": "Река Тигода (г. Любань)",
-    "district": "Тосненский район",
+    "name": "Tigoda River (Lyuban)",
+    "district": "Tosnensky District",
     "status": "Unsafe",
     "coordinates": [59.3512, 31.2514],
-    "description": "Качество воды в реке у города Любань стабильно не соответствует санитарным нормам."
+    "description": "Water quality in the river near the city of Lyuban consistently fails to meet sanitary standards."
   },
   {
-    "name": "Река Свирь (г. Лодейное Поле)",
-    "district": "Лодейнопольский район",
+    "name": "Svir River (Lodeynoye Pole)",
+    "district": "Lodeynopolsky District",
     "status": "Safe",
     "coordinates": [60.7354, 33.5412],
-    "description": "Официальный городской пляж на полноводной чистой реке Свирь."
+    "description": "Official city beach on the deep and clean Svir River."
   },
   {
-    "name": "Озеро Озерко (Лодейное Поле)",
-    "district": "Лодейнопольский район",
+    "name": "Lake Ozerko (Lodeynoye Pole)",
+    "district": "Lodeynopolsky District",
     "status": "Safe",
     "coordinates": [60.7194, 33.5812],
-    "description": "Небольшое лесное озеро вблизи городской черты, излюбленный пляж местных жителей."
+    "description": "A small forest lake near the city limits, a favorite beach of local residents."
   },
   {
-    "name": "Река Шингарка (д. Низино)",
-    "district": "Ломоносовский район",
+    "name": "Shingarka River (Nizino village)",
+    "district": "Lomonosovsky District",
     "status": "Safe",
     "coordinates": [59.8242, 29.8514],
-    "description": "Река с ледяной родниковой водой, питающая знаменитые фонтаны Петергофа."
+    "description": "A river with icy spring water that feeds the famous fountains of Peterhof."
   },
   {
-    "name": "Финский залив (п. Большая Ижора)",
-    "district": "Ломоносовский район",
+    "name": "Gulf of Finland (Bolshaya Izhora settlement)",
+    "district": "Lomonosovsky District",
     "status": "Safe",
     "coordinates": [59.9431, 29.5812],
-    "description": "Широкий песчаный пляж залива с пологим мелководным входом, удобным для детей."
+    "description": "A wide sandy beach of the gulf with a gentle shallow entrance, convenient for children."
   },
   {
-    "name": "Финский залив (форт Красная Горка)",
-    "district": "Ломоносовский район",
+    "name": "Gulf of Finland (Krasnaya Gorka fort)",
+    "district": "Lomonosovsky District",
     "status": "Safe",
     "coordinates": [59.9721, 29.3314],
-    "description": "Дикий галечно-песчаный пляж у подножия исторического фортификационного комплекса."
+    "description": "A wild pebble-sandy beach at the foot of the historical fortification complex."
   },
   {
-    "name": "Озеро Гора-Валдай (Шепелево)",
-    "district": "Ломоносовский район",
+    "name": "Lake Gora-Valday (Shepelevo)",
+    "district": "Lomonosovsky District",
     "status": "Safe",
     "coordinates": [59.9712, 29.1124],
-    "description": "Кристально чистое и глубокое озеро родникового происхождения рядом с сосновым бором."
+    "description": "A crystal clear and deep lake of spring origin next to a pine forest."
   },
   {
-    "name": "Река Вуокса (городской пляж)",
-    "district": "Приозерский район",
+    "name": "Vuoksa River (city beach)",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [61.0344, 30.1172],
-    "description": "Благоустроенный пляж в городе Приозерск на берегу чистой озерно-речной системы Вуокса."
+    "description": "A well-equipped beach in the town of Priozersk on the shore of the clean Vuoksa lake-river system."
   },
   {
-    "name": "Озеро Отрадное (п. Плодовое)",
-    "district": "Приозерский район",
+    "name": "Lake Otradnoye (Plodovoye settlement)",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [60.8354, 30.4124],
-    "description": "Одно из крупнейших и глубоких озер Карельского перешейка с каменистыми островами."
+    "description": "One of the largest and deepest lakes of the Karelian Isthmus with rocky islands."
   },
   {
-    "name": "Озеро Раздолинское (Сосново)",
-    "district": "Приозерский район",
+    "name": "Lake Razdolinskoye (Sosnovo)",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [60.5612, 30.2314],
-    "description": "Популярное теплое озеро вблизи поселка Сосново, окруженное холмистым ландшафтом."
+    "description": "A popular warm lake near the Sosnovo settlement, surrounded by a hilly landscape."
   },
   {
-    "name": "Озеро Красное (Коробицыно)",
-    "district": "Приозерский район",
+    "name": "Lake Krasnoye (Korobitsyno)",
+    "district": "Priozersky District",
     "status": "Unsafe",
     "coordinates": [60.5583, 29.7417],
-    "description": "Озеро у горнолыжных курортов. В воде фиксируется высокое природное содержание железа."
+    "description": "A lake near ski resorts. High natural iron content is recorded in the water."
   },
   {
-    "name": "Озеро Борисовское",
-    "district": "Приозерский район",
+    "name": "Lake Borisovskoye",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [60.6121, 30.0412],
-    "description": "Небольшое, быстро прогревающееся лесное озеро с хорошими песчаными пляжами."
+    "description": "A small, fast-warming forest lake with good sandy beaches."
   },
   {
-    "name": "Озеро Суходольское",
-    "district": "Приозерский район",
+    "name": "Lake Sukhodolskoye",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [60.6723, 30.2514],
-    "description": "Входит в водную систему Вуоксы. Обладает быстрым течением, вода чистая и свежая."
+    "description": "Part of the Vuoksa water system. It has a fast current, the water is clean and fresh."
   },
   {
-    "name": "Озеро Вуокса (п. Синево)",
-    "district": "Приозерский район",
+    "name": "Lake Vuoksa (Sinevo settlement)",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [60.9821, 30.0314],
-    "description": "Живописные плесы Вуоксы со множеством скалистых островков."
+    "description": "Picturesque reaches of the Vuoksa with many rocky islets."
   },
   {
-    "name": "Озеро Мичуринское",
-    "district": "Приозерский район",
+    "name": "Lake Michurinskoye",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [60.5694, 29.8712],
-    "description": "Озеро у поселка Мичуринское. Песчаный берег, вода соответствует экологическим стандартам."
+    "description": "A lake near the Michurinskoye settlement. Sandy shore, water meets environmental standards."
   },
   {
-    "name": "Озеро Саперное",
-    "district": "Приозерский район",
+    "name": "Lake Sapernoye",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [60.7182, 30.1894],
-    "description": "Небольшой прозрачный водоем рядом с Приозерским шоссе."
+    "description": "A small transparent body of water next to the Priozerskoye Highway."
   },
   {
-    "name": "Озеро Снетковское (Детское)",
-    "district": "Приозерский район",
+    "name": "Lake Snetkovskoye (Detskoye)",
+    "district": "Priozersky District",
     "status": "Safe",
     "coordinates": [61.0112, 30.1782],
-    "description": "Маленькое лесное озеро с мягкой водой, очень популярное для отдыха с детьми."
+    "description": "A small forest lake with soft water, very popular for recreation with children."
   },
   {
-    "name": "Река Плюсса (г. Сланцы)",
-    "district": "Сланцевский район",
+    "name": "Plyussa River (Slantsy)",
+    "district": "Slantsevsky District",
     "status": "Safe",
     "coordinates": [59.1243, 28.0831],
-    "description": "Традиционное санкционированное место отдыха на реке Плюсса в черте города Сланцы."
+    "description": "A traditional authorized recreation area on the Plyussa River within the city of Slantsy."
   },
   {
-    "name": "Река Свирь (п. Погра)",
-    "district": "Подпорожский район",
+    "name": "Svir River (Pogra settlement)",
+    "district": "Podporozhsky District",
     "status": "Safe",
     "coordinates": [60.9123, 34.0912],
-    "description": "Уединенная речная зона отдыха на Свири в экологически чистом районе на северо-востоке области."
+    "description": "A secluded river recreation zone on the Svir in an ecologically clean area in the northeast of the region."
   },
   {
-    "name": "Озеро Капитоновское",
-    "district": "Подпорожский район",
+    "name": "Lake Kapitonovskoye",
+    "district": "Podporozhsky District",
     "status": "Safe",
     "coordinates": [60.9312, 34.2104],
-    "description": "Глубокое таежное озеро с абсолютно чистой водой."
+    "description": "A deep taiga lake with absolutely clean water."
   },
   {
-    "name": "Река Паша (д. Назимя)",
-    "district": "Пашский район",
+    "name": "Pasha River (Nazimya village)",
+    "district": "Pashsky District",
     "status": "Safe",
     "coordinates": [60.4212, 33.0231],
-    "description": "Река с быстрым течением и коричневатой, но чистой торфяной водой."
+    "description": "A river with a fast current and brownish, but clean peat water."
   },
   {
-    "name": "Озеро Крестное (г. Тихвин)",
-    "district": "Тихвинский район",
+    "name": "Lake Krestnoye (Tikhvin)",
+    "district": "Tikhvinsky District",
     "status": "Unsafe",
     "coordinates": [59.6384, 33.5112],
-    "description": "Городской водоем Тихвина. Часто закрывается из-за несоответствия пробы микробиологии."
+    "description": "A city water body of Tikhvin. It is often closed due to non-compliance of microbiological samples."
   },
   {
-    "name": "Озеро Царицыно (п. Царицыно)",
-    "district": "Тихвинский район",
+    "name": "Lake Tsaritsyno (Tsaritsyno settlement)",
+    "district": "Tikhvinsky District",
     "status": "Safe",
     "coordinates": [59.7212, 33.4312],
-    "description": "Чистый загородный водоем, признанный Роспотребнадзором полностью пригодным для купания."
+    "description": "A clean suburban body of water, recognized by Rospotrebnadzor as completely suitable for swimming."
   },
   {
-    "name": "Река Тихвинка (г. Тихвин)",
-    "district": "Тихвинский район",
+    "name": "Tikhvinka River (Tikhvin)",
+    "district": "Tikhvinsky District",
     "status": "Unsafe",
     "coordinates": [59.6452, 33.5312],
-    "description": "Река протекает через город, фиксируются органические загрязнения."
+    "description": "The river flows through the city; organic contamination is recorded."
   },
   {
-    "name": "Озеро Долгое (Бокситогорск)",
-    "district": "Бокситогорский район",
+    "name": "Lake Dolgoye (Boxitogorsk)",
+    "district": "Boxitogorsky District",
     "status": "Safe",
     "coordinates": [59.4621, 33.8512],
-    "description": "Лесное проточное озеро, популярная рекреационная зона Бокситогорска."
+    "description": "A forest flow-through lake, a popular recreational area of Boxitogorsk."
   },
   {
-    "name": "Озеро Павловское (Бокситогорск)",
-    "district": "Бокситогорский район",
+    "name": "Lake Pavlovskoye (Boxitogorsk)",
+    "district": "Boxitogorsky District",
     "status": "Safe",
     "coordinates": [59.4812, 33.8914],
-    "description": "Водоем с пологими берегами, пробы воды стабильно остаются в пределах нормы."
+    "description": "A body of water with gently sloping shores, water samples stably remain within the normal range."
   },
   {
-    "name": "Река Оредеж (п. Вырица)",
-    "district": "Гатчинский район",
+    "name": "Oredezh River (Vyritsa settlement)",
+    "district": "Gatchinsky District",
     "status": "Safe",
     "coordinates": [59.4123, 30.3312],
-    "description": "Историческое курортное место с золотистым кварцевым песком и живописными красными девонскими скалами."
+    "description": "An historical resort place with golden quartz sand and picturesque red Devonian cliffs."
   },
   {
-    "name": "Озеро Финево (Вырица)",
-    "district": "Гатчинский район",
+    "name": "Lake Finevo (Vyritsa)",
+    "district": "Gatchinsky District",
     "status": "Safe",
     "coordinates": [59.3982, 30.3814],
-    "description": "Небольшое лесное озеро с песчаным дном в окрестностях Вырицы."
+    "description": "A small forest lake with a sandy bottom in the vicinity of Vyritsa."
   },
   {
-    "name": "Река Кобринка",
-    "district": "Гатчинский район",
+    "name": "Kobrinka River",
+    "district": "Gatchinsky District",
     "status": "Safe",
     "coordinates": [59.4212, 30.1124],
-    "description": "Чистая малая река Гатчинского района, пригодная для уединенного отдыха."
+    "description": "A clean small river in the Gatchinsky District, suitable for a secluded holiday."
   },
   {
-    "name": "Озеро Белое (Гатчинский парк)",
-    "district": "Гатчинский район",
+    "name": "Lake Beloye (Gatchina Park)",
+    "district": "Gatchinsky District",
     "status": "Unsafe",
     "coordinates": [59.5694, 30.1012],
-    "description": "Озеро на территории дворцового парка. Купание строго запрещено статусом музея-заповедника."
+    "description": "A lake on the territory of the palace park. Swimming is strictly prohibited by the status of the museum-reserve."
   },
   {
-    "name": "Озеро Разлив (пляж Офицерский)",
-    "district": "Курортный район",
+    "name": "Lake Razliv (Ofitsersky Beach)",
+    "district": "Kurortny District",
     "status": "Unsafe",
     "coordinates": [60.1014, 29.9872],
-    "description": "Мелководный исторический пруд Сестрорецка. Летом вода сильно цветет и не проходит пробы."
+    "description": "A shallow historical pond of Sestroretsk. In summer, the water blooms heavily and fails samples."
   },
   {
-    "name": "Финский залив (пляж Ласковый)",
-    "district": "Курортный район",
+    "name": "Gulf of Finland (Laskovy Beach)",
+    "district": "Kurortny District",
     "status": "Safe",
     "coordinates": [60.1472, 29.9124],
-    "description": "Один из лучших и самых благоустроенных пляжей побережья в поселке Солнечное."
+    "description": "One of the best and most well-equipped beaches of the coast in the Solnechnoye settlement."
   },
   {
-    "name": "Финский залив (пляж Золотой)",
-    "district": "Курортный район",
+    "name": "Gulf of Finland (Zolotoy Beach)",
+    "district": "Kurortny District",
     "status": "Safe",
     "coordinates": [60.1872, 29.6984],
-    "description": "Широкий песчаный пляж в Зеленогорске, прилегающий к Парку культуры и отдыха."
+    "description": "A wide sandy beach in Zelenogorsk, adjacent to the Park of Culture and Leisure."
   },
   {
-    "name": "Финский залив (пляж Дубковский)",
-    "district": "Курортный район",
+    "name": "Gulf of Finland (Dubkovsky Beach)",
+    "district": "Kurortny District",
     "status": "Safe",
     "coordinates": [60.0894, 29.9392],
-    "description": "Пляж в Сестрорецке на территории старинного парка 'Дубки', основанного Петром I."
+    "description": "A beach in Sestroretsk on the territory of the ancient 'Dubki' park, founded by Peter I."
   },
   {
-    "name": "Финский залив (пляж Чудный)",
-    "district": "Курортный район",
+    "name": "Gulf of Finland (Chudny Beach)",
+    "district": "Kurortny District",
     "status": "Unsafe",
     "coordinates": [60.1612, 29.8124],
-    "description": "Пляж в Репино. Посещение рекомендуется только для принятия солнечных ванн."
+    "description": "A beach in Repino. Visiting is recommended only for sunbathing."
   },
   {
-    "name": "Озеро Безымянное (Красное Село)",
-    "district": "Красносельский район",
+    "name": "Lake Bezymyannoye (Krasnoye Selo)",
+    "district": "Krasnoselsky District",
     "status": "Safe",
     "coordinates": [59.7282, 30.0894],
-    "description": "Традиционно один из самых чистых и проверенных водоемов в черте Санкт-Петербурга."
+    "description": "Traditionally one of the cleanest and most proven bodies of water within St. Petersburg."
   },
   {
-    "name": "Суздальское озеро (Верхнее)",
-    "district": "Выборгский район",
+    "name": "Suzdalskoye Lake (Verkhneye)",
+    "district": "Vyborgsky District",
     "status": "Safe",
     "coordinates": [60.0384, 30.3182],
-    "description": "Городской оборудованный пляж прямо у станции метро 'Озерки'. Вода соответствует нормам."
+    "description": "An equipped city beach right next to the 'Ozerki' metro station. Water complies with standards."
   },
   {
-    "name": "Ольгинский пруд",
-    "district": "Выборгский район",
+    "name": "Olginsky Pond",
+    "district": "Vyborgsky District",
     "status": "Unsafe",
     "coordinates": [60.0162, 30.3542],
-    "description": "Искусственный изолированный водоем у Светлановского проспекта. Купание не рекомендуется."
+    "description": "An artificial isolated body of water near Svetlanovsky Avenue. Swimming is not recommended."
   }
 ]

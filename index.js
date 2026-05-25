@@ -9,10 +9,11 @@ function initMap() {
     map = L.map('map').setView([60.0, 30.6], 8);
 
     // Подгружаем защищенный слой тайлов OpenStreetMap
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
         maxZoom: 19,
-        attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        attribution: '&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors &copy; <a href="https://carto.com">CARTO</a>'
     }).addTo(map);
+
 
     // Создаем слой-группу для маркеров, чтобы легко очищать их при фильтрации
     markersLayer = L.layerGroup().addTo(map);
