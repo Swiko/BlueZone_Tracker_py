@@ -3,553 +3,790 @@
     "name": "Lake Dontso (Beach)",
     "district": "Volosovsky District",
     "status": "Safe",
-    "coordinates": [59.4204, 29.7712],
+    "coordinates": [
+      59.4204,
+      29.7712
+    ],
     "description": "A unique water body located on the site of former quarry workings. Known as the 'Leningrad Maldives' due to its turquoise water and white sand."
   },
   {
     "name": "Luga River (Bolshoy Sabsk village)",
     "district": "Volosovsky District",
     "status": "Safe",
-    "coordinates": [59.1364, 29.0205],
+    "coordinates": [
+      59.1364,
+      29.0205
+    ],
     "description": "A popular beach recreation area for local residents on the banks of the Luga River near the Bolshoy Sabsk settlement."
   },
   {
     "name": "Syas River (City Beach)",
     "district": "Volkhovsky District",
     "status": "Safe",
-    "coordinates": [60.1384, 32.4285],
+    "coordinates": [
+      60.1384,
+      32.4285
+    ],
     "description": "An officially equipped municipal beach within the city limits of Syasstroy."
   },
   {
     "name": "Lake Ladoga (Cape Osinovets)",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
-    "coordinates": [60.1171, 31.0772],
-    "description": "A clean sandy beach near the famous Osinovetsky Lighthouse. It features an equipped recreation area."
+    "status": "Unsafe",
+    "coordinates": [
+      60.1171,
+      31.0772
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Ladoga (Koshkino village)",
     "district": "Vsevolozhsky District",
     "status": "Safe",
-    "coordinates": [59.9723, 31.0315],
+    "coordinates": [
+      59.9723,
+      31.0315
+    ],
     "description": "A beach recreation area in the Morozov urban settlement near the village of Koshkino."
   },
   {
     "name": "Lake Ladoga (Kokorevo village)",
     "district": "Vsevolozhsky District",
     "status": "Safe",
-    "coordinates": [60.0531, 31.0734],
+    "coordinates": [
+      60.0531,
+      31.0734
+    ],
     "description": "A long, natural sandy beach on the coast of Lake Ladoga, a favorite holiday destination for St. Petersburg residents."
   },
   {
     "name": "Lake Lembolovskoye (Lembolovo station)",
     "district": "Vsevolozhsky District",
-    "status": "Unsafe",
-    "coordinates": [60.3111, 30.3156],
-    "description": "A picturesque lake surrounded by a pine forest, but the water periodically fails microbiological tests."
+    "status": "Safe",
+    "coordinates": [
+      60.3111,
+      30.3156
+    ],
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Mednoye (Mednozavodskoy)",
     "district": "Vsevolozhsky District",
     "status": "Safe",
-    "coordinates": [60.2038, 30.1388],
+    "coordinates": [
+      60.2038,
+      30.1388
+    ],
     "description": "A small artificial reservoir with specific dark peat water that is safe for swimming."
   },
   {
     "name": "Lake Korkinskoye",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
-    "coordinates": [59.9125, 30.7412],
-    "description": "An equipped clean beach with a developed resort infrastructure not far from Koltushi."
+    "status": "Unsafe",
+    "coordinates": [
+      59.9125,
+      30.7412
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Kavgolovskoye (Toksovo)",
     "district": "Vsevolozhsky District",
-    "status": "Unsafe",
-    "coordinates": [60.1652, 30.5234],
-    "description": "A large lake next to the Toksovo sports bases. It experiences a high anthropogenic load."
+    "status": "Safe",
+    "coordinates": [
+      60.1652,
+      30.5234
+    ],
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Hepojarvi",
     "district": "Vsevolozhsky District",
     "status": "Safe",
-    "coordinates": [60.1764, 30.5891],
+    "coordinates": [
+      60.1764,
+      30.5891
+    ],
     "description": "A deep forest lake with clear and clean water, surrounded by a hilly landscape."
   },
   {
     "name": "Lake Kurgolovskoye",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
-    "coordinates": [60.1812, 30.5401],
-    "description": "Separated from Lake Kavgolovskoye by a narrow isthmus, the water here is traditionally cleaner."
+    "status": "Unsafe",
+    "coordinates": [
+      60.1812,
+      30.5401
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Koltushskoye",
     "district": "Vsevolozhsky District",
     "status": "Unsafe",
-    "coordinates": [59.9372, 30.6514],
+    "coordinates": [
+      59.9372,
+      30.6514
+    ],
     "description": "A small lake in the center of the Koltushi village. Swimming is not recommended due to nearby coastal construction."
   },
   {
     "name": "Lake Lazurnoye (Murmanskoye Hwy)",
     "district": "Vsevolozhsky District",
     "status": "Safe",
-    "coordinates": [59.8821, 30.9312],
+    "coordinates": [
+      59.8821,
+      30.9312
+    ],
     "description": "An artificial sandy quarry with a recreation center at the 33rd kilometer of the Murmansk Highway."
   },
   {
     "name": "Lake Zhdanovskoye (Vsevolozhsk)",
     "district": "Vsevolozhsky District",
     "status": "Unsafe",
-    "coordinates": [60.0031, 30.6723],
+    "coordinates": [
+      60.0031,
+      30.6723
+    ],
     "description": "Two small forest lakes on the southern outskirts of Vsevolozhsk. Water samples are unstable."
   },
   {
     "name": "Gulf of Finland (Smolyanoy Cape)",
     "district": "Vyborgsky District",
-    "status": "Safe",
-    "coordinates": [60.7161, 28.7182],
-    "description": "A renovated Vyborg city beach in the historic part of the town with a view of the Vyborg Castle."
+    "status": "Unsafe",
+    "coordinates": [
+      60.7161,
+      28.7182
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Vyborgskoye (Beach)",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.7243, 28.7894],
+    "coordinates": [
+      60.7243,
+      28.7894
+    ],
     "description": "A water body in the Vyborg recreation zone, regularly inspected by sanitary authorities."
   },
   {
     "name": "Lake Zerkalnoye",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.2312, 29.1314],
+    "coordinates": [
+      60.2312,
+      29.1314
+    ],
     "description": "One of the most transparent and clean lakes on the Karelian Isthmus with a gently sloping sandy bottom."
   },
   {
     "name": "Lake Gladyshevskoye",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
-    "coordinates": [60.2814, 29.4123],
-    "description": "Located on the territory of the nature reserve of the same name. The water fails to meet standards due to iron content."
+    "status": "Safe",
+    "coordinates": [
+      60.2814,
+      29.4123
+    ],
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Krasavitsa (Bolshoye Simaginskoye)",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.2524, 29.7712],
+    "coordinates": [
+      60.2524,
+      29.7712
+    ],
     "description": "A highly picturesque water body surrounded by high pine cliffs. A popular destination for campsites."
   },
   {
     "name": "Lake Nakhimovskoye",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.4281, 29.5123],
+    "coordinates": [
+      60.4281,
+      29.5123
+    ],
     "description": "A large navigable lake with children's camps and recreation centers situated on its shores."
   },
   {
     "name": "Lake Roshchinskoye",
     "district": "Vyborgsky District",
     "status": "Unsafe",
-    "coordinates": [60.2594, 29.6105],
+    "coordinates": [
+      60.2594,
+      29.6105
+    ],
     "description": "A lake within the boundaries of the Roshchino settlement. It suffers from proximity to residential areas and road runoff."
   },
   {
     "name": "Lake Vysokinskoye",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.2852, 28.8912],
+    "coordinates": [
+      60.2852,
+      28.8912
+    ],
     "description": "A clean forest lake located near Primorsk. It is a favorite spot for fishermen."
   },
   {
     "name": "Lake Bolshoye Lesnoye",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.7812, 28.9104],
+    "coordinates": [
+      60.7812,
+      28.9104
+    ],
     "description": "A small reservoir north of Vyborg, surrounded by scenic rocky outcrops."
   },
   {
     "name": "Lake Pionerskoye",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.3612, 28.9814],
+    "coordinates": [
+      60.3612,
+      28.9814
+    ],
     "description": "A long and deep lake connected by a channel to Lake Aleksandrovskoye. The water is clean."
   },
   {
     "name": "Lake Aleksandrovskoye",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.3872, 28.9412],
+    "coordinates": [
+      60.3872,
+      28.9412
+    ],
     "description": "A clean natural water body with stony-sandy shores in the Vyborgsky District."
   },
   {
     "name": "Lake Smirnovskoye",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
-    "coordinates": [60.7182, 29.0314],
-    "description": "Located near the Smirnovo settlement. Exceedances of organic indicators are regularly recorded."
+    "status": "Safe",
+    "coordinates": [
+      60.7182,
+      29.0314
+    ],
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Luga River (Kingisepp City Beach)",
     "district": "Kingiseppsky District",
     "status": "Safe",
-    "coordinates": [59.3734, 28.6183],
+    "coordinates": [
+      59.3734,
+      28.6183
+    ],
     "description": "The main city beach of Kingisepp, equipped with rescue stations and changing cabins."
   },
   {
     "name": "Gulf of Finland (Vybye village)",
     "district": "Kingiseppsky District",
     "status": "Safe",
-    "coordinates": [59.6784, 28.2301],
+    "coordinates": [
+      59.6784,
+      28.2301
+    ],
     "description": "A spacious wild beach in the Narva Bay, situated on the territory of the Kurgalsky Nature Reserve."
   },
   {
     "name": "Lake Lipovskoye (Kurgalsky)",
     "district": "Kingiseppsky District",
     "status": "Safe",
-    "coordinates": [59.6543, 28.1432],
+    "coordinates": [
+      59.6543,
+      28.1432
+    ],
     "description": "The only saltwater 'marine' lake in the Leningrad Oblast, known for its therapeutic properties."
   },
   {
     "name": "Rosson River",
     "district": "Kingiseppsky District",
-    "status": "Safe",
-    "coordinates": [59.4312, 28.1894],
-    "description": "A unique river that can reverse its flow direction. The water is characterized by high transparency."
+    "status": "Unsafe",
+    "coordinates": [
+      59.4312,
+      28.1894
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Svetloye (Budogoshch settlement)",
     "district": "Kirishsky District",
     "status": "Safe",
-    "coordinates": [59.2452, 32.4831],
+    "coordinates": [
+      59.2452,
+      32.4831
+    ],
     "description": "A pristine water body located in the forested resort zone of the Budogoshch settlement."
   },
   {
     "name": "Lake Zelyonoye (Budogoshch)",
     "district": "Kirishsky District",
     "status": "Safe",
-    "coordinates": [59.2312, 32.4984],
+    "coordinates": [
+      59.2312,
+      32.4984
+    ],
     "description": "A recreation area neighboring Lake Svetloye; the water fully complies with all sanitary standards."
   },
   {
     "name": "Volkhov River (Kirishi city)",
     "district": "Kirishsky District",
     "status": "Unsafe",
-    "coordinates": [59.4523, 32.0621],
+    "coordinates": [
+      59.4523,
+      32.0621
+    ],
     "description": "The city beach in Kirishi. Swimming is prohibited due to industrial upstream discharges."
   },
   {
     "name": "Lake Cheremenetskoye",
     "district": "Luzhsky District",
     "status": "Safe",
-    "coordinates": [58.6214, 29.8214],
+    "coordinates": [
+      58.6214,
+      29.8214
+    ],
     "description": "A natural monument. The Cheremenetsky Monastery and old noble estates are located on its shores."
   },
   {
     "name": "Lake Vrevo",
     "district": "Luzhsky District",
     "status": "Safe",
-    "coordinates": [58.5834, 29.8412],
+    "coordinates": [
+      58.5834,
+      29.8412
+    ],
     "description": "A large, deep lake with clear water situated in the southern part of the Luzhsky District."
   },
   {
     "name": "Lake Omchino (Luga city)",
     "district": "Luzhsky District",
     "status": "Safe",
-    "coordinates": [58.7291, 29.8142],
+    "coordinates": [
+      58.7291,
+      29.8142
+    ],
     "description": "An official municipal beach area on the outskirts of the city of Luga."
   },
   {
     "name": "Lake Toloni (Luga city)",
     "district": "Luzhsky District",
     "status": "Safe",
-    "coordinates": [58.7182, 29.8654],
+    "coordinates": [
+      58.7182,
+      29.8654
+    ],
     "description": "The second official lake for recreation within the boundaries of the Luzhsky urban settlement."
   },
   {
     "name": "Luga River (Luga)",
     "district": "Luzhsky District",
     "status": "Unsafe",
-    "coordinates": [58.7394, 29.8512],
+    "coordinates": [
+      58.7394,
+      29.8512
+    ],
     "description": "Sections of the river within the city of Luga are not recommended for swimming due to bacterial contamination."
   },
   {
     "name": "Lake Nesterovskoye (Shapki)",
     "district": "Tosnensky District",
-    "status": "Safe",
-    "coordinates": [59.6001, 31.1823],
-    "description": "A popular sandy quarry in Shapki with transparent spring water."
+    "status": "Unsafe",
+    "coordinates": [
+      59.6001,
+      31.1823
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Tosna River (Tosno)",
     "district": "Tosnensky District",
     "status": "Unsafe",
-    "coordinates": [59.5394, 30.8712],
+    "coordinates": [
+      59.5394,
+      30.8712
+    ],
     "description": "The Tosna River within the city of Tosno is contaminated by surface domestic sewage."
   },
   {
     "name": "Tigoda River (Lyuban)",
     "district": "Tosnensky District",
     "status": "Unsafe",
-    "coordinates": [59.3512, 31.2514],
+    "coordinates": [
+      59.3512,
+      31.2514
+    ],
     "description": "Water quality in the river near the city of Lyuban consistently fails to meet sanitary standards."
   },
   {
     "name": "Svir River (Lodeynoye Pole)",
     "district": "Lodeynopolsky District",
     "status": "Safe",
-    "coordinates": [60.7354, 33.5412],
+    "coordinates": [
+      60.7354,
+      33.5412
+    ],
     "description": "Official city beach on the deep and clean Svir River."
   },
   {
     "name": "Lake Ozerko (Lodeynoye Pole)",
     "district": "Lodeynopolsky District",
     "status": "Safe",
-    "coordinates": [60.7194, 33.5812],
+    "coordinates": [
+      60.7194,
+      33.5812
+    ],
     "description": "A small forest lake near the city limits, a favorite beach of local residents."
   },
   {
     "name": "Shingarka River (Nizino village)",
     "district": "Lomonosovsky District",
     "status": "Safe",
-    "coordinates": [59.8242, 29.8514],
+    "coordinates": [
+      59.8242,
+      29.8514
+    ],
     "description": "A river with icy spring water that feeds the famous fountains of Peterhof."
   },
   {
     "name": "Gulf of Finland (Bolshaya Izhora settlement)",
     "district": "Lomonosovsky District",
     "status": "Safe",
-    "coordinates": [59.9431, 29.5812],
+    "coordinates": [
+      59.9431,
+      29.5812
+    ],
     "description": "A wide sandy beach of the gulf with a gentle shallow entrance, convenient for children."
   },
   {
     "name": "Gulf of Finland (Krasnaya Gorka fort)",
     "district": "Lomonosovsky District",
     "status": "Safe",
-    "coordinates": [59.9721, 29.3314],
+    "coordinates": [
+      59.9721,
+      29.3314
+    ],
     "description": "A wild pebble-sandy beach at the foot of the historical fortification complex."
   },
   {
     "name": "Lake Gora-Valday (Shepelevo)",
     "district": "Lomonosovsky District",
     "status": "Safe",
-    "coordinates": [59.9712, 29.1124],
+    "coordinates": [
+      59.9712,
+      29.1124
+    ],
     "description": "A crystal clear and deep lake of spring origin next to a pine forest."
   },
   {
     "name": "Vuoksa River (city beach)",
     "district": "Priozersky District",
     "status": "Safe",
-    "coordinates": [61.0344, 30.1172],
+    "coordinates": [
+      61.0344,
+      30.1172
+    ],
     "description": "A well-equipped beach in the town of Priozersk on the shore of the clean Vuoksa lake-river system."
   },
   {
     "name": "Lake Otradnoye (Plodovoye settlement)",
     "district": "Priozersky District",
-    "status": "Safe",
-    "coordinates": [60.8354, 30.4124],
-    "description": "One of the largest and deepest lakes of the Karelian Isthmus with rocky islands."
+    "status": "Unsafe",
+    "coordinates": [
+      60.8354,
+      30.4124
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Razdolinskoye (Sosnovo)",
     "district": "Priozersky District",
     "status": "Safe",
-    "coordinates": [60.5612, 30.2314],
+    "coordinates": [
+      60.5612,
+      30.2314
+    ],
     "description": "A popular warm lake near the Sosnovo settlement, surrounded by a hilly landscape."
   },
   {
     "name": "Lake Krasnoye (Korobitsyno)",
     "district": "Priozersky District",
-    "status": "Unsafe",
-    "coordinates": [60.5583, 29.7417],
-    "description": "A lake near ski resorts. High natural iron content is recorded in the water."
+    "status": "Safe",
+    "coordinates": [
+      60.5583,
+      29.7417
+    ],
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Borisovskoye",
     "district": "Priozersky District",
-    "status": "Safe",
-    "coordinates": [60.6121, 30.0412],
-    "description": "A small, fast-warming forest lake with good sandy beaches."
+    "status": "Unsafe",
+    "coordinates": [
+      60.6121,
+      30.0412
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Sukhodolskoye",
     "district": "Priozersky District",
     "status": "Safe",
-    "coordinates": [60.6723, 30.2514],
+    "coordinates": [
+      60.6723,
+      30.2514
+    ],
     "description": "Part of the Vuoksa water system. It has a fast current, the water is clean and fresh."
   },
   {
     "name": "Lake Vuoksa (Sinevo settlement)",
     "district": "Priozersky District",
-    "status": "Safe",
-    "coordinates": [60.9821, 30.0314],
-    "description": "Picturesque reaches of the Vuoksa with many rocky islets."
+    "status": "Unsafe",
+    "coordinates": [
+      60.9821,
+      30.0314
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Michurinskoye",
     "district": "Priozersky District",
     "status": "Safe",
-    "coordinates": [60.5694, 29.8712],
+    "coordinates": [
+      60.5694,
+      29.8712
+    ],
     "description": "A lake near the Michurinskoye settlement. Sandy shore, water meets environmental standards."
   },
   {
     "name": "Lake Sapernoye",
     "district": "Priozersky District",
     "status": "Safe",
-    "coordinates": [60.7182, 30.1894],
+    "coordinates": [
+      60.7182,
+      30.1894
+    ],
     "description": "A small transparent body of water next to the Priozerskoye Highway."
   },
   {
     "name": "Lake Snetkovskoye (Detskoye)",
     "district": "Priozersky District",
     "status": "Safe",
-    "coordinates": [61.0112, 30.1782],
+    "coordinates": [
+      61.0112,
+      30.1782
+    ],
     "description": "A small forest lake with soft water, very popular for recreation with children."
   },
   {
     "name": "Plyussa River (Slantsy)",
     "district": "Slantsevsky District",
     "status": "Safe",
-    "coordinates": [59.1243, 28.0831],
+    "coordinates": [
+      59.1243,
+      28.0831
+    ],
     "description": "A traditional authorized recreation area on the Plyussa River within the city of Slantsy."
   },
   {
     "name": "Svir River (Pogra settlement)",
     "district": "Podporozhsky District",
-    "status": "Safe",
-    "coordinates": [60.9123, 34.0912],
-    "description": "A secluded river recreation zone on the Svir in an ecologically clean area in the northeast of the region."
+    "status": "Unsafe",
+    "coordinates": [
+      60.9123,
+      34.0912
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Kapitonovskoye",
     "district": "Podporozhsky District",
     "status": "Safe",
-    "coordinates": [60.9312, 34.2104],
+    "coordinates": [
+      60.9312,
+      34.2104
+    ],
     "description": "A deep taiga lake with absolutely clean water."
   },
   {
     "name": "Pasha River (Nazimya village)",
     "district": "Pashsky District",
-    "status": "Safe",
-    "coordinates": [60.4212, 33.0231],
-    "description": "A river with a fast current and brownish, but clean peat water."
+    "status": "Unsafe",
+    "coordinates": [
+      60.4212,
+      33.0231
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Krestnoye (Tikhvin)",
     "district": "Tikhvinsky District",
     "status": "Unsafe",
-    "coordinates": [59.6384, 33.5112],
+    "coordinates": [
+      59.6384,
+      33.5112
+    ],
     "description": "A city water body of Tikhvin. It is often closed due to non-compliance of microbiological samples."
   },
   {
     "name": "Lake Tsaritsyno (Tsaritsyno settlement)",
     "district": "Tikhvinsky District",
-    "status": "Safe",
-    "coordinates": [59.7212, 33.4312],
-    "description": "A clean suburban body of water, recognized by Rospotrebnadzor as completely suitable for swimming."
+    "status": "Unsafe",
+    "coordinates": [
+      59.7212,
+      33.4312
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Tikhvinka River (Tikhvin)",
     "district": "Tikhvinsky District",
     "status": "Unsafe",
-    "coordinates": [59.6452, 33.5312],
+    "coordinates": [
+      59.6452,
+      33.5312
+    ],
     "description": "The river flows through the city; organic contamination is recorded."
   },
   {
     "name": "Lake Dolgoye (Boxitogorsk)",
     "district": "Boxitogorsky District",
     "status": "Safe",
-    "coordinates": [59.4621, 33.8512],
+    "coordinates": [
+      59.4621,
+      33.8512
+    ],
     "description": "A forest flow-through lake, a popular recreational area of Boxitogorsk."
   },
   {
     "name": "Lake Pavlovskoye (Boxitogorsk)",
     "district": "Boxitogorsky District",
     "status": "Safe",
-    "coordinates": [59.4812, 33.8914],
+    "coordinates": [
+      59.4812,
+      33.8914
+    ],
     "description": "A body of water with gently sloping shores, water samples stably remain within the normal range."
   },
   {
     "name": "Oredezh River (Vyritsa settlement)",
     "district": "Gatchinsky District",
     "status": "Safe",
-    "coordinates": [59.4123, 30.3312],
+    "coordinates": [
+      59.4123,
+      30.3312
+    ],
     "description": "An historical resort place with golden quartz sand and picturesque red Devonian cliffs."
   },
   {
     "name": "Lake Finevo (Vyritsa)",
     "district": "Gatchinsky District",
     "status": "Safe",
-    "coordinates": [59.3982, 30.3814],
+    "coordinates": [
+      59.3982,
+      30.3814
+    ],
     "description": "A small forest lake with a sandy bottom in the vicinity of Vyritsa."
   },
   {
     "name": "Kobrinka River",
     "district": "Gatchinsky District",
     "status": "Safe",
-    "coordinates": [59.4212, 30.1124],
+    "coordinates": [
+      59.4212,
+      30.1124
+    ],
     "description": "A clean small river in the Gatchinsky District, suitable for a secluded holiday."
   },
   {
     "name": "Lake Beloye (Gatchina Park)",
     "district": "Gatchinsky District",
     "status": "Unsafe",
-    "coordinates": [59.5694, 30.1012],
+    "coordinates": [
+      59.5694,
+      30.1012
+    ],
     "description": "A lake on the territory of the palace park. Swimming is strictly prohibited by the status of the museum-reserve."
   },
   {
     "name": "Lake Razliv (Ofitsersky Beach)",
     "district": "Kurortny District",
-    "status": "Unsafe",
-    "coordinates": [60.1014, 29.9872],
-    "description": "A shallow historical pond of Sestroretsk. In summer, the water blooms heavily and fails samples."
+    "status": "Safe",
+    "coordinates": [
+      60.1014,
+      29.9872
+    ],
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Gulf of Finland (Laskovy Beach)",
     "district": "Kurortny District",
-    "status": "Safe",
-    "coordinates": [60.1472, 29.9124],
-    "description": "One of the best and most well-equipped beaches of the coast in the Solnechnoye settlement."
+    "status": "Unsafe",
+    "coordinates": [
+      60.1472,
+      29.9124
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Gulf of Finland (Zolotoy Beach)",
     "district": "Kurortny District",
     "status": "Safe",
-    "coordinates": [60.1872, 29.6984],
+    "coordinates": [
+      60.1872,
+      29.6984
+    ],
     "description": "A wide sandy beach in Zelenogorsk, adjacent to the Park of Culture and Leisure."
   },
   {
     "name": "Gulf of Finland (Dubkovsky Beach)",
     "district": "Kurortny District",
-    "status": "Safe",
-    "coordinates": [60.0894, 29.9392],
-    "description": "A beach in Sestroretsk on the territory of the ancient 'Dubki' park, founded by Peter I."
+    "status": "Unsafe",
+    "coordinates": [
+      60.0894,
+      29.9392
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Gulf of Finland (Chudny Beach)",
     "district": "Kurortny District",
     "status": "Unsafe",
-    "coordinates": [60.1612, 29.8124],
+    "coordinates": [
+      60.1612,
+      29.8124
+    ],
     "description": "A beach in Repino. Visiting is recommended only for sunbathing."
   },
   {
     "name": "Lake Bezymyannoye (Krasnoye Selo)",
     "district": "Krasnoselsky District",
-    "status": "Safe",
-    "coordinates": [59.7282, 30.0894],
-    "description": "Traditionally one of the cleanest and most proven bodies of water within St. Petersburg."
+    "status": "Unsafe",
+    "coordinates": [
+      59.7282,
+      30.0894
+    ],
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Suzdalskoye Lake (Verkhneye)",
     "district": "Vyborgsky District",
     "status": "Safe",
-    "coordinates": [60.0384, 30.3182],
+    "coordinates": [
+      60.0384,
+      30.3182
+    ],
     "description": "An equipped city beach right next to the 'Ozerki' metro station. Water complies with standards."
   },
   {
     "name": "Olginsky Pond",
     "district": "Vyborgsky District",
     "status": "Unsafe",
-    "coordinates": [60.0162, 30.3542],
+    "coordinates": [
+      60.0162,
+      30.3542
+    ],
     "description": "An artificial isolated body of water near Svetlanovsky Avenue. Swimming is not recommended."
   }
 ]
