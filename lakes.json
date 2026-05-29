@@ -72,22 +72,22 @@
   {
     "name": "Lake Mednoye (Mednozavodskoy)",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.2038,
       30.1388
     ],
-    "description": "A small artificial reservoir with specific dark peat water that is safe for swimming."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Korkinskoye",
     "district": "Vsevolozhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       59.9125,
       30.7412
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Kavgolovskoye (Toksovo)",
@@ -132,12 +132,12 @@
   {
     "name": "Lake Lazurnoye (Murmanskoye Hwy)",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.8821,
       30.9312
     ],
-    "description": "An artificial sandy quarry with a recreation center at the 33rd kilometer of the Murmansk Highway."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Zhdanovskoye (Vsevolozhsk)",
@@ -192,12 +192,12 @@
   {
     "name": "Lake Krasavitsa (Bolshoye Simaginskoye)",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.2524,
       29.7712
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Nakhimovskoye",
@@ -212,12 +212,12 @@
   {
     "name": "Lake Roshchinskoye",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.2594,
       29.6105
     ],
-    "description": "A lake within the boundaries of the Roshchino settlement. It suffers from proximity to residential areas and road runoff."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Vysokinskoye",
@@ -252,12 +252,12 @@
   {
     "name": "Lake Aleksandrovskoye",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.3872,
       28.9412
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Smirnovskoye",
@@ -312,12 +312,12 @@
   {
     "name": "Lake Svetloye (Budogoshch settlement)",
     "district": "Kirishsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.2452,
       32.4831
     ],
-    "description": "A pristine water body located in the forested resort zone of the Budogoshch settlement."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Zelyonoye (Budogoshch)",
@@ -362,42 +362,42 @@
   {
     "name": "Lake Omchino (Luga city)",
     "district": "Luzhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       58.7291,
       29.8142
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Toloni (Luga city)",
     "district": "Luzhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       58.7182,
       29.8654
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Luga River (Luga)",
     "district": "Luzhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       58.7394,
       29.8512
     ],
-    "description": "Sections of the river within the city of Luga are not recommended for swimming due to bacterial contamination."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Nesterovskoye (Shapki)",
     "district": "Tosnensky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.6001,
       31.1823
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Tosna River (Tosno)",
@@ -502,12 +502,12 @@
   {
     "name": "Lake Razdolinskoye (Sosnovo)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.5612,
       30.2314
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Krasnoye (Korobitsyno)",
@@ -572,12 +572,12 @@
   {
     "name": "Lake Snetkovskoye (Detskoye)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       61.0112,
       30.1782
     ],
-    "description": "A small forest lake with soft water, very popular for recreation with children."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Plyussa River (Slantsy)",
@@ -622,22 +622,22 @@
   {
     "name": "Lake Krestnoye (Tikhvin)",
     "district": "Tikhvinsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.6384,
       33.5112
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Tsaritsyno (Tsaritsyno settlement)",
     "district": "Tikhvinsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.7212,
       33.4312
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Tikhvinka River (Tikhvin)",
@@ -662,12 +662,12 @@
   {
     "name": "Lake Pavlovskoye (Boxitogorsk)",
     "district": "Boxitogorsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       59.4812,
       33.8914
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Oredezh River (Vyritsa settlement)",
@@ -682,12 +682,12 @@
   {
     "name": "Lake Finevo (Vyritsa)",
     "district": "Gatchinsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.3982,
       30.3814
     ],
-    "description": "A small forest lake with a sandy bottom in the vicinity of Vyritsa."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Kobrinka River",
@@ -752,12 +752,12 @@
   {
     "name": "Gulf of Finland (Chudny Beach)",
     "district": "Kurortny District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.1612,
       29.8124
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Bezymyannoye (Krasnoye Selo)",
