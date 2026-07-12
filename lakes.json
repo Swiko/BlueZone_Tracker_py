@@ -122,22 +122,22 @@
   {
     "name": "Lake Koltushskoye",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.9372,
       30.6514
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Lazurnoye (Murmanskoye Hwy)",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.8821,
       30.9312
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Zhdanovskoye (Vsevolozhsk)",
@@ -192,12 +192,12 @@
   {
     "name": "Lake Krasavitsa (Bolshoye Simaginskoye)",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.2524,
       29.7712
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Nakhimovskoye",
@@ -442,12 +442,12 @@
   {
     "name": "Shingarka River (Nizino village)",
     "district": "Lomonosovsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       59.8242,
       29.8514
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Gulf of Finland (Bolshaya Izhora settlement)",
@@ -492,12 +492,12 @@
   {
     "name": "Lake Otradnoye (Plodovoye settlement)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.8354,
       30.4124
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Razdolinskoye (Sosnovo)",
@@ -512,12 +512,12 @@
   {
     "name": "Lake Krasnoye (Korobitsyno)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.5583,
       29.7417
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Borisovskoye",
@@ -572,12 +572,12 @@
   {
     "name": "Lake Snetkovskoye (Detskoye)",
     "district": "Priozersky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       61.0112,
       30.1782
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Plyussa River (Slantsy)",
@@ -612,12 +612,12 @@
   {
     "name": "Pasha River (Nazimya village)",
     "district": "Pashsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.4212,
       33.0231
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Krestnoye (Tikhvin)",
@@ -632,12 +632,12 @@
   {
     "name": "Lake Tsaritsyno (Tsaritsyno settlement)",
     "district": "Tikhvinsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       59.7212,
       33.4312
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Tikhvinka River (Tikhvin)",
