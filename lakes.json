@@ -2,12 +2,12 @@
   {
     "name": "Lake Dontso (Beach)",
     "district": "Volosovsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.4204,
       29.7712
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Luga River (Bolshoy Sabsk village)",
@@ -32,12 +32,12 @@
   {
     "name": "Lake Ladoga (Cape Osinovets)",
     "district": "Vsevolozhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.1171,
       31.0772
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Ladoga (Koshkino village)",
@@ -202,12 +202,12 @@
   {
     "name": "Lake Nakhimovskoye",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.4281,
       29.5123
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Roshchinskoye",
@@ -282,12 +282,12 @@
   {
     "name": "Gulf of Finland (Vybye village)",
     "district": "Kingiseppsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.6784,
       28.2301
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Lipovskoye (Kurgalsky)",
@@ -332,12 +332,12 @@
   {
     "name": "Volkhov River (Kirishi city)",
     "district": "Kirishsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.4523,
       32.0621
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Cheremenetskoye",
@@ -372,12 +372,12 @@
   {
     "name": "Lake Toloni (Luga city)",
     "district": "Luzhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       58.7182,
       29.8654
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Luga River (Luga)",
@@ -392,22 +392,22 @@
   {
     "name": "Lake Nesterovskoye (Shapki)",
     "district": "Tosnensky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.6001,
       31.1823
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Tosna River (Tosno)",
     "district": "Tosnensky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       59.5394,
       30.8712
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Tigoda River (Lyuban)",
@@ -482,12 +482,12 @@
   {
     "name": "Vuoksa River (city beach)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       61.0344,
       30.1172
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Otradnoye (Plodovoye settlement)",
@@ -502,12 +502,12 @@
   {
     "name": "Lake Razdolinskoye (Sosnovo)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.5612,
       30.2314
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Krasnoye (Korobitsyno)",
@@ -572,12 +572,12 @@
   {
     "name": "Lake Snetkovskoye (Detskoye)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       61.0112,
       30.1782
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Plyussa River (Slantsy)",
@@ -652,22 +652,22 @@
   {
     "name": "Lake Dolgoye (Boxitogorsk)",
     "district": "Boxitogorsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.4621,
       33.8512
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Pavlovskoye (Boxitogorsk)",
     "district": "Boxitogorsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       59.4812,
       33.8914
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Oredezh River (Vyritsa settlement)",
@@ -732,22 +732,22 @@
   {
     "name": "Gulf of Finland (Zolotoy Beach)",
     "district": "Kurortny District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.1872,
       29.6984
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Gulf of Finland (Dubkovsky Beach)",
     "district": "Kurortny District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.0894,
       29.9392
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Gulf of Finland (Chudny Beach)",
