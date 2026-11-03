@@ -2,12 +2,12 @@
   {
     "name": "Lake Dontso (Beach)",
     "district": "Volosovsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.4204,
       29.7712
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Luga River (Bolshoy Sabsk village)",
@@ -32,12 +32,12 @@
   {
     "name": "Lake Ladoga (Cape Osinovets)",
     "district": "Vsevolozhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.1171,
       31.0772
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Ladoga (Koshkino village)",
@@ -52,12 +52,12 @@
   {
     "name": "Lake Ladoga (Kokorevo village)",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.0531,
       31.0734
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Lembolovskoye (Lembolovo station)",
@@ -122,12 +122,12 @@
   {
     "name": "Lake Koltushskoye",
     "district": "Vsevolozhsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       59.9372,
       30.6514
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Lazurnoye (Murmanskoye Hwy)",
@@ -142,12 +142,12 @@
   {
     "name": "Lake Zhdanovskoye (Vsevolozhsk)",
     "district": "Vsevolozhsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.0031,
       30.6723
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Gulf of Finland (Smolyanoy Cape)",
@@ -252,12 +252,12 @@
   {
     "name": "Lake Aleksandrovskoye",
     "district": "Vyborgsky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.3872,
       28.9412
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Smirnovskoye",
@@ -292,12 +292,12 @@
   {
     "name": "Lake Lipovskoye (Kurgalsky)",
     "district": "Kingiseppsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.6543,
       28.1432
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Rosson River",
@@ -482,12 +482,12 @@
   {
     "name": "Vuoksa River (city beach)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       61.0344,
       30.1172
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Otradnoye (Plodovoye settlement)",
@@ -512,12 +512,12 @@
   {
     "name": "Lake Krasnoye (Korobitsyno)",
     "district": "Priozersky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.5583,
       29.7417
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Borisovskoye",
@@ -562,12 +562,12 @@
   {
     "name": "Lake Sapernoye",
     "district": "Priozersky District",
-    "status": "Unsafe",
+    "status": "Safe",
     "coordinates": [
       60.7182,
       30.1894
     ],
-    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
+    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
   },
   {
     "name": "Lake Snetkovskoye (Detskoye)",
@@ -612,12 +612,12 @@
   {
     "name": "Pasha River (Nazimya village)",
     "district": "Pashsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.4212,
       33.0231
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Krestnoye (Tikhvin)",
@@ -652,12 +652,12 @@
   {
     "name": "Lake Dolgoye (Boxitogorsk)",
     "district": "Boxitogorsky District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       59.4621,
       33.8512
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Lake Pavlovskoye (Boxitogorsk)",
@@ -722,12 +722,12 @@
   {
     "name": "Gulf of Finland (Laskovy Beach)",
     "district": "Kurortny District",
-    "status": "Safe",
+    "status": "Unsafe",
     "coordinates": [
       60.1472,
       29.9124
     ],
-    "description": "✅ Проверка пройдена. Вода полностью соответствует гигиеническим нормативам."
+    "description": "⚠️ Внимание! Последние пробы воды зафиксировали отклонения от санитарных норм."
   },
   {
     "name": "Gulf of Finland (Zolotoy Beach)",
